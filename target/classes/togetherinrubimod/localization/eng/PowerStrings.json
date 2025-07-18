@@ -1,0 +1,14 @@
+{
+  "togetherinrubimod:PowerID": {
+    "NAME": "Ultimate Power",
+    "DESCRIPTIONS": [
+      "You are Very Cool and Strong."
+    ]
+  },
+  "togetherinrubimod:Sinner": {
+    "NAME": "Sinner",
+    "DESCRIPTIONS": [
+      "rubimod:Sin applies to Poison damage."
+    ]
+  }
+}

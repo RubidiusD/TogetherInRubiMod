@@ -1,0 +1,42 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description. NL Second line.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "${modID}:TremblingStrike": {
+    "NAME": "Trembling Strike",
+    "DESCRIPTION": "Deal !D! damage. If played by a class other than a Hegemon, apply !M! rubimod:Sin."
+  },
+  "${modID}:MouthEssence": {
+    "NAME": "Mouth Essence",
+    "DESCRIPTION": "Apply !M! tisCardPack:Taunt. Deal !D! damage."
+  },
+  "${modID}:Sandwiches": {
+    "NAME": "Sandwiches",
+    "DESCRIPTION": "Heal ALL allies by !M!."
+  },
+  "${modID}:SpiritCoins": {
+    "NAME": "Spirit Coins",
+    "DESCRIPTION": "Give ALL allies !B!*!M! Block, Bleeding, and !${modID}:Leech! rubimod:Leech_Toxin.",
+    "UPGRADED_DESCRIPTION": "Retain. NL Give ALL allies !B!*!M! Block, Bleeding, and !${modID}:Leech! rubimod:Leech_Toxin."
+  },
+  "${modID}:UmbralArmaments": {
+    "NAME": "Umbral Armaments",
+    "DESCRIPTION": "ALL allies apply !M! rubimod:Necrotoxin on hit this turn."
+  },
+  "${modID}:ParentsRunaSchool": {
+    "NAME": "My Parents Run a School",
+    "DESCRIPTION": "Shuffle an Insight into ALL draw piles.",
+    "UPGRADED_DESCRIPTION": "Shuffle an Insight+ into ALL draw piles."
+  },
+  "${modID}:UtterContempt": {
+    "NAME": "Utter Contempt",
+    "DESCRIPTION": "Innate. NL Apply !M! rubimod:Sin. NL This enemy's rubimod:Sin applies to their Poison."
+  }
+}
