@@ -2,13 +2,11 @@ package togetherinrubimod;
 
 import basemod.AutoAdd;
 import basemod.BaseMod;
-import basemod.interfaces.EditCardsSubscriber;
-import basemod.interfaces.EditKeywordsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
-import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import rubimod.cards.BaseCard;
+import togetherinrubimod.cards.BaseCard;
+import togetherinrubimod.relics.BaseRelic;
 import togetherinrubimod.util.GeneralUtils;
 import togetherinrubimod.util.KeywordInfo;
 import togetherinrubimod.util.TextureLoader;
@@ -35,6 +33,7 @@ import java.util.*;
 @SpireInitializer
 public class TogetherinRubiMod implements
         EditCardsSubscriber,
+        EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         PostInitializeSubscriber {
@@ -234,6 +233,22 @@ public class TogetherinRubiMod implements
                     BaseMod.addCard(card);
                     if (info.seen || card.rarity == AbstractCard.CardRarity.BASIC)
                         UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
+                });
+    }
+
+    @Override
+    public void receiveEditRelics() { // adds any relics to the game
+        new AutoAdd(modID) // Loads files
+                .packageFilter(BaseRelic.class) // in the same package as this class
+                .any(BaseRelic.class, (info, relic) -> { // run this code for children
+                    if (relic.pool != null)
+                        BaseMod.addRelicToCustomPool(relic, relic.pool); //Register a custom character specific relic
+                    else
+                        BaseMod.addRelic(relic, relic.relicType); //Register a shared or base game character specific relic
+
+                    // If the class is annotated with @AutoAdd.Seen, it's marked as seen
+                    if (info.seen)
+                        UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
     }
 }

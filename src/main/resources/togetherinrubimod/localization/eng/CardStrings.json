@@ -35,8 +35,32 @@
     "DESCRIPTION": "Shuffle an Insight into ALL draw piles.",
     "UPGRADED_DESCRIPTION": "Shuffle an Insight+ into ALL draw piles."
   },
+  "${modID}:WayoftheReaper": {
+    "NAME": "Way of the Reaper",
+    "DESCRIPTION": "Add a Punish to ALL allies hands.",
+    "UPGRADED_DESCRIPTION": "Add a Punish+ to ALL allies hands."
+  },
   "${modID}:UtterContempt": {
     "NAME": "Utter Contempt",
     "DESCRIPTION": "Innate. NL Apply !M! rubimod:Sin. NL This enemy's rubimod:Sin applies to their Poison."
+  },
+  "${modID}:SilverFeast": {
+    "NAME": "Silver Feast",
+    "DESCRIPTION": "Cleanse all enemies of debuffs. ALL allies gain [E] and draw 1 card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Cleanse all enemies of debuffs. ALL allies gain [E] and draw 1 card. NL Exhaust."
+  },
+  "${modID}:BasicTolerance": {
+    "NAME": "Basic Tolerance",
+    "DESCRIPTION": "All players gain !M! Artifact."
+  },
+  "${modID}:HegemonyAura": {
+    "NAME": "Hegemony Aura",
+    "DESCRIPTION": "Whenever an ally is attacked, apply !M! rubimod:Sin back.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever an ally is attacked, apply !M! rubimod:Sin back."
+  },
+  "${modID}:KindofHisThing": {
+    "NAME": "Kind of His Thing",
+    "DESCRIPTION": "Gain 15 rubimod:Necrotoxin. NL. ALL players gain buffs over time.",
+    "UPGRADE_DESCRIPTION": "Gain 15 rubimod:Necrotoxin. NL. ALL players gain buffs and lose !M! hp to draw !M! each turn."
   }
 }

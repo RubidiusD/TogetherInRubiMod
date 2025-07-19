@@ -1,45 +1,42 @@
-package togetherinrubimod.cards.skills;
+package togetherinrubimod.cards.powers;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import togetherinrubimod.cards.BaseCard;
 import rubimod.character.Hegemon;
-import togetherinrubimod.util.CardStats;
+import rubimod.powers.buff.HegemonyPower;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
+import togetherinrubimod.cards.BaseCard;
+import togetherinrubimod.util.CardStats;
 
-public class Sandwiches extends BaseCard {
-    public static final String ID = makeID(Sandwiches.class.getSimpleName()); // makeID adds the mod name
+public class HegemonyAura extends BaseCard {
+    public static final String ID = makeID(HegemonyAura.class.getSimpleName()); // makeID adds the mod name
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
-            CardType.SKILL,
-            CardRarity.COMMON,
-            CardTarget.NONE,
-            0    // card cost!! (-1 is X, -2 is unplayable)
+            CardType.POWER,
+            CardRarity.UNCOMMON,
+            CardTarget.SELF,
+            2    // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int MAGIC = 1;
-    private static final int UPG_MAGIC = 1;
 
-    public Sandwiches() {
+    public HegemonyAura() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
-        setExhaust(true);
-
-        tags.add(CardTags.HEALING);
+        setMagic(MAGIC); // self-explanatory
+        setInnate(false, true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        p.heal(this.magicNumber);
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
-            e.heal(this.magicNumber);
+            e.addPower(new HegemonyPower(p, magicNumber));
     }
 
     @Override
     public AbstractCard makeCopy() { // Optional
-        return new Sandwiches();
+        return new HegemonyAura();
     }
 }

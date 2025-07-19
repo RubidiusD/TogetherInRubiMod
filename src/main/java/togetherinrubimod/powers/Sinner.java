@@ -3,7 +3,7 @@ package togetherinrubimod.powers;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import static rubimod.RubiMod.makeID;
+import static togetherinrubimod.TogetherinRubiMod.makeID;
 
 public class Sinner extends BasePower {
     public static final String POWER_ID = makeID(Sinner.class.getSimpleName());

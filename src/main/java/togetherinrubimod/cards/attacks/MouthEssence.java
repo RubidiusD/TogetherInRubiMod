@@ -35,6 +35,7 @@ public class MouthEssence extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyTauntAction(m, p, magicNumber));
+        addToBot(new ApplyTauntAction(p, m, magicNumber));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         }
 
