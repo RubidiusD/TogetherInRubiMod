@@ -9,9 +9,9 @@
       "Blizzard is a good example for this."
     ]
   },
-  "${modID}:TremblingStrike": {
-    "NAME": "Trembling Strike",
-    "DESCRIPTION": "Deal !D! damage. If played by a class other than a Hegemon, apply !M! rubimod:Sin."
+  "${modID}:SympathyStrike": {
+    "NAME": "Sympathy Strike",
+    "DESCRIPTION": "Deal !D! damage. If played by a class other than a Hegemon, deal !M! rubimod:Necrotic damage on hit."
   },
   "${modID}:MouthEssence": {
     "NAME": "Mouth Essence",
@@ -23,8 +23,8 @@
   },
   "${modID}:SpiritCoins": {
     "NAME": "Spirit Coins",
-    "DESCRIPTION": "Give ALL allies !B!*!M! Block, Bleeding, and !${modID}:Leech! rubimod:Leech_Toxin.",
-    "UPGRADED_DESCRIPTION": "Retain. NL Give ALL allies !B!*!M! Block, Bleeding, and !${modID}:Leech! rubimod:Leech_Toxin."
+    "DESCRIPTION": "Give ALL allies !B!x3 Block, Bleeding, and !${modID}:Leech! rubimod:Leech_Toxin.",
+    "UPGRADED_DESCRIPTION": "Retain. NL Give ALL allies !B!x3 Block, Bleeding, and !${modID}:Leech! rubimod:Leech_Toxin."
   },
   "${modID}:UmbralArmaments": {
     "NAME": "Umbral Armaments",

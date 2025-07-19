@@ -8,12 +8,12 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.character.Hegemon;
-import rubimod.powers.debuff.Sin;
+import rubimod.powers.buff.ShadowHand;
 import togetherinrubimod.cards.BaseCard;
 import togetherinrubimod.util.CardStats;
 
-public class TremblingStrike extends BaseCard {
-    public static final String ID = makeID(TremblingStrike.class.getSimpleName()); // makeID adds the mod name
+public class SympathyStrike extends BaseCard {
+    public static final String ID = makeID(SympathyStrike.class.getSimpleName()); // makeID adds the mod name
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,
@@ -25,13 +25,12 @@ public class TremblingStrike extends BaseCard {
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
     private static final int MAGIC = 3;
-    private static final int UPG_MAGIC = 2;
 
-    public TremblingStrike() {
+    public SympathyStrike() {
         super(ID, info); // calls the parent constructor
 
         setDamage(DAMAGE, UPG_DAMAGE); // self-explanatory
-        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
+        setMagic(MAGIC); // self-explanatory
 
         tags.add(CardTags.STRIKE);
     }
@@ -40,12 +39,12 @@ public class TremblingStrike extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (!p.chosenClass.equals(Hegemon.Meta.HEGEMON)) {
-            addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
+            addToBot(new ApplyPowerAction(p, p, new ShadowHand(p, magicNumber)));
         }
     }
 
     @Override
     public AbstractCard makeCopy() { // Optional
-        return new TremblingStrike();
+        return new SympathyStrike();
     }
 }

@@ -3,7 +3,6 @@ togetherinrubimod\cards\BaseCard$VariableType.class
 togetherinrubimod\cards\BaseCard$QuickDynamicVariable.class
 togetherinrubimod\actions\SilverFeastAction.class
 togetherinrubimod\cards\skills\Sandwiches.class
-togetherinrubimod\cards\attacks\TremblingStrike.class
 togetherinrubimod\powers\Sinner.class
 togetherinrubimod\cards\powers\KindofHisThing.class
 togetherinrubimod\cards\skills\SpiritCoins.class
@@ -26,6 +25,7 @@ togetherinrubimod\cards\powers\BasicTolerance.class
 togetherinrubimod\relics\BaseRelic$1.class
 togetherinrubimod\cards\powers\HegemonyAura.class
 togetherinrubimod\util\TextureLoader$1.class
+togetherinrubimod\cards\attacks\SympathyStrike.class
 togetherinrubimod\cards\BaseCard.class
 togetherinrubimod\cards\attacks\MouthEssence.class
 togetherinrubimod\cards\skills\WayoftheReaper.class
