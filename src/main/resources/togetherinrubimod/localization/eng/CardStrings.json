@@ -23,15 +23,15 @@
   },
   "${modID}:SpiritCoins": {
     "NAME": "Spirit Coins",
-    "DESCRIPTION": "Give ALL allies !B!x3 Block, Bleeding, and !${modID}:Leech! rubimod:Leech_Toxin.",
-    "UPGRADED_DESCRIPTION": "Retain. NL Give ALL allies !B!x3 Block, Bleeding, and !${modID}:Leech! rubimod:Leech_Toxin."
+    "DESCRIPTION": "Give ALL allies !B!x3 Block, rubimod:Bleeding, and !${modID}:Leech! rubimod:Leech_Toxin.",
+    "UPGRADED_DESCRIPTION": "Retain. NL Give ALL allies !B!x3 Block, rubimod:Bleeding, and !${modID}:Leech! rubimod:Leech_Toxin."
   },
-  "${modID}:UmbralArmaments": {
+  "${modID}:UmbralArmament": {
     "NAME": "Umbral Armaments",
     "DESCRIPTION": "ALL allies apply !M! rubimod:Necrotoxin on hit this turn."
   },
   "${modID}:ParentsRunaSchool": {
-    "NAME": "My Parents Run a School",
+    "NAME": "..and Drink!",
     "DESCRIPTION": "Shuffle an Insight into ALL draw piles.",
     "UPGRADED_DESCRIPTION": "Shuffle an Insight+ into ALL draw piles."
   },

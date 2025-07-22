@@ -6,7 +6,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
 import com.megacrit.cardcrawl.actions.unique.PoisonLoseHpAction;
 import togetherinrubimod.powers.Sinner;
 
-import static rubimod.actions.NecroticDamageAction.calculateSin;
+import static rubimod.powers.debuff.Sin.calculateSin;
 
 @SpirePatch2(
         clz= PoisonLoseHpAction.class,

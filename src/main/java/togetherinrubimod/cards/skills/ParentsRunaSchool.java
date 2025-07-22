@@ -1,7 +1,7 @@
 package togetherinrubimod.cards.skills;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.purple.Study;
+import com.megacrit.cardcrawl.cards.tempCards.Insight;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.character.Hegemon;
@@ -26,7 +26,7 @@ public class ParentsRunaSchool extends BaseCard {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
-        cardsToPreview = new Study();
+        cardsToPreview = new Insight();
     }
 
     @Override

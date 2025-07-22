@@ -4,7 +4,6 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
-import com.megacrit.cardcrawl.cards.purple.Study;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.network.objects.items.NetworkCard;
 import spireTogether.util.SpireHelp;
@@ -21,7 +20,7 @@ public class RunSchoolAction extends AbstractGameAction {
     @Override
     public void update()
     {
-        AbstractCard c = new Study();
+        AbstractCard c = new com.megacrit.cardcrawl.cards.tempCards.Insight();
         if (this.upgraded) {
             c.upgrade();
         }
