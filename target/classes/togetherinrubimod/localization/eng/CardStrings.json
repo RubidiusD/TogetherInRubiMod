@@ -62,5 +62,9 @@
     "NAME": "Kind of His Thing",
     "DESCRIPTION": "Gain 15 rubimod:Necrotoxin. NL. ALL players gain buffs over time.",
     "UPGRADE_DESCRIPTION": "Gain 15 rubimod:Necrotoxin. NL. ALL players gain buffs and lose !M! hp to draw !M! each turn."
+  },
+  "togetherinrubimod:Moralise": {
+    "NAME": "Moralise",
+    "DESCRIPTION": "Deal !D! damage and apply Weak to ALL."
   }
 }

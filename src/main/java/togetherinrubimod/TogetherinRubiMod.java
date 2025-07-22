@@ -2,9 +2,15 @@ package togetherinrubimod;
 
 import basemod.AutoAdd;
 import basemod.BaseMod;
+import basemod.helpers.CardBorderGlowManager;
 import basemod.interfaces.*;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
+import com.megacrit.cardcrawl.relics.Ginger;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
+import spireTogether.network.P2P.P2PPlayer;
+import spireTogether.util.SpireHelp;
 import togetherinrubimod.cards.BaseCard;
 import togetherinrubimod.relics.BaseRelic;
 import togetherinrubimod.util.GeneralUtils;
@@ -166,9 +172,6 @@ public class TogetherinRubiMod implements
     public static String imagePath(String file) {
         return resourcesFolder + "/images/" + file;
     }
-    public static String characterPath(String file) {
-        return resourcesFolder + "/images/character/" + file;
-    }
     public static String powerPath(String file) {
         return resourcesFolder + "/images/powers/" + file;
     }
@@ -234,6 +237,36 @@ public class TogetherinRubiMod implements
                     if (info.seen || card.rarity == AbstractCard.CardRarity.BASIC)
                         UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
                 });
+
+        // Card Glow Hopefully?
+        CardBorderGlowManager.addGlowInfo(new CardBorderGlowManager.GlowInfo() {
+            @Override
+            public boolean test(AbstractCard card) {
+                //return true if "card" follows this rule, else return false
+
+                for (P2PPlayer p : SpireHelp.Multiplayer.Players.GetPlayers(true, true)) {
+                    if (!p.hasPower(ArtifactPower.POWER_ID) && !p.hasRelic(Ginger.ID))
+                        return false;
+                }
+
+                return true;
+            }
+
+            @Override
+            public Color getColor(AbstractCard card) {
+                //return an instance of Color to be used as the color. e.g. Color.WHITE.cpy().
+
+                return Color.YELLOW.cpy();
+            }
+
+            @Override
+            public String glowID() {
+                //return a string to be used as a unique ID for this glow.
+                //It's recommended to follow the usual modding convention of "modname:name"
+
+                return makeID("Glow");
+            }
+        });
     }
 
     @Override
