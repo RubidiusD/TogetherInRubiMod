@@ -24,7 +24,7 @@
 
     <!-- This information will be displayed in ModTheSpire, the modded launcher. -->
     <name>TiS Hegemon Pack</name>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <!-- Avoid using \ in this description, as they can cause the description to fail to load. -->
     <!-- If you really want to use them, you'll need to "escape" them by putting another one in front, like \\ -->
     <description>Because random nonsense needed a sequel.\n
@@ -73,7 +73,7 @@
         <dependency>
             <groupId>rubimod</groupId>
             <artifactId>rubimod</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.3</version>
             <scope>system</scope>
             <systemPath>${steam.path}/workshop/content/646570/3531504374/rubimod.jar</systemPath>
         </dependency>

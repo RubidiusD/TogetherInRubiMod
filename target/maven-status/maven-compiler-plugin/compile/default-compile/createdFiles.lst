@@ -13,11 +13,13 @@ togetherinrubimod\powers\BasePower.class
 togetherinrubimod\cards\skills\UmbralArmament.class
 togetherinrubimod\actions\RunSchoolAction.class
 togetherinrubimod\util\KeywordInfo.class
+togetherinrubimod\cards\attacks\MouthEssence$TauntPatch.class
 togetherinrubimod\TogetherinRubiMod$1.class
 togetherinrubimod\util\TextureLoader.class
 togetherinrubimod\util\GeneralUtils.class
 togetherinrubimod\TogetherinRubiMod.class
 togetherinrubimod\potions\BasePotion.class
+togetherinrubimod\cards\attacks\MouthEssence$TauntPlayerPatch.class
 togetherinrubimod\util\TriFunction.class
 togetherinrubimod\cards\skills\ParentsRunaSchool.class
 togetherinrubimod\util\CardStats.class

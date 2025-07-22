@@ -19,7 +19,7 @@
   },
   "togetherinrubimod:Sandwiches": {
     "NAME": "Sandwiches",
-    "DESCRIPTION": "Heal ALL allies by !M!."
+    "DESCRIPTION": "Heal ALL players by !M!. NL Exhaust."
   },
   "${modID}:SpiritCoins": {
     "NAME": "Spirit Coins",

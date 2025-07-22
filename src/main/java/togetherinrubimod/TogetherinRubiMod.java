@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 import togetherinrubimod.cards.BaseCard;
+import togetherinrubimod.cards.attacks.Moralise;
 import togetherinrubimod.relics.BaseRelic;
 import togetherinrubimod.util.GeneralUtils;
 import togetherinrubimod.util.KeywordInfo;
@@ -244,6 +245,8 @@ public class TogetherinRubiMod implements
             public boolean test(AbstractCard card) {
                 //return true if "card" follows this rule, else return false
 
+                if (!card.cardID.equals(Moralise.ID))
+                    return false;
                 for (P2PPlayer p : SpireHelp.Multiplayer.Players.GetPlayers(true, true)) {
                     if (!p.hasPower(ArtifactPower.POWER_ID) && !p.hasRelic(Ginger.ID))
                         return false;

@@ -1,9 +1,11 @@
 package togetherinrubimod.cards.powers;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.BrutalityPower;
 import rubimod.actions.ApplyNecrotoxinAction;
 import rubimod.character.Hegemon;
@@ -34,6 +36,8 @@ public class KindofHisThing extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        int artifact = p.getPower(ArtifactPower.POWER_ID).amount;
+        addToBot(new RemoveSpecificPowerAction(p, p, ArtifactPower.POWER_ID));
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
         {
             e.addPower(new PhoenixPower(p, 1));
@@ -44,6 +48,7 @@ public class KindofHisThing extends BaseCard {
         addToBot(new ApplyNecrotoxinAction(p, p, 15));
         if (magicNumber > 0)
             addToBot(new ApplyPowerAction(p, p, new BrutalityPower(p, magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, artifact)));
     }
 
     @Override

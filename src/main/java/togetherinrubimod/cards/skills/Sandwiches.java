@@ -34,7 +34,7 @@ public class Sandwiches extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         p.heal(this.magicNumber);
-        for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
+        for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(false, true))
             e.heal(this.magicNumber);
     }
 
