@@ -1,48 +1,44 @@
-package togetherinrubimod.cards.skills;
+package togetherinrubimod.cards.powers;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.cards.skills.Punish;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import rubimod.character.Hegemon;
 import spireTogether.network.P2P.P2PPlayer;
-import spireTogether.network.objects.items.NetworkCard;
 import spireTogether.util.SpireHelp;
 import togetherinrubimod.cards.BaseCard;
 import togetherinrubimod.util.CardStats;
 
-public class WayoftheReaper extends BaseCard {
-    public static final String ID = ("togetherinrubimod:" + WayoftheReaper.class.getSimpleName());
+public class Immunisation extends BaseCard {
+    public static final String ID = ("togetherinrubimod:" + Immunisation.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
-            CardType.SKILL,
+            CardType.POWER,
             CardRarity.UNCOMMON,
-            CardTarget.NONE,
+            CardTarget.SELF,
             1    // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    public WayoftheReaper() {
+    private static final int MAGIC = 1;
+    private static final int UPG_MAGIC = 1;
+
+    public Immunisation() {
         super(ID, info); // calls the parent constructor
 
-        cardsToPreview = new Punish();
+        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new ApplyPowerAction(p, p, new ArtifactPower(p, magicNumber)));
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
-            e.addCard(NetworkCard.Generate(cardsToPreview), CardGroup.CardGroupType.HAND);
-    }
-
-    @Override
-    public void upgrade() {
-        super.upgrade();
-
-        cardsToPreview.upgrade();
+            e.addPower(new ArtifactPower(p, magicNumber));
     }
 
     @Override
     public AbstractCard makeCopy() { // Optional
-        return new WayoftheReaper();
+        return new Immunisation();
     }
 }

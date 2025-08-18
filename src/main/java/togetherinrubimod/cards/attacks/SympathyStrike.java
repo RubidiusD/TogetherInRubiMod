@@ -13,7 +13,7 @@ import togetherinrubimod.cards.BaseCard;
 import togetherinrubimod.util.CardStats;
 
 public class SympathyStrike extends BaseCard {
-    public static final String ID = makeID(SympathyStrike.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("togetherinrubimod:" + SympathyStrike.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,

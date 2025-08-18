@@ -1,7 +1,5 @@
 package togetherinrubimod.powers;
 
-import togetherinrubimod.util.GeneralUtils;
-import togetherinrubimod.util.TextureLoader;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -11,9 +9,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.powers.AbstractPower;
+import spireTogether.powers.CustomMultiplayerPower;
+import togetherinrubimod.util.GeneralUtils;
+import togetherinrubimod.util.TextureLoader;
 
-public abstract class BasePower extends AbstractPower {
+public abstract class BasePower extends CustomMultiplayerPower {
     private static PowerStrings getPowerStrings(String ID)
     {
         return CardCrawlGame.languagePack.getPowerStrings(ID);
@@ -84,4 +84,6 @@ public abstract class BasePower extends AbstractPower {
             FontHelper.renderFontRightTopAligned(sb, FontHelper.powerAmountFont, Integer.toString(this.amount2), x, y + 15.0F * Settings.scale, this.fontScale, c);
         }
     }
+
+    public void onArtifactLost(AbstractCreature owner) {}
 }

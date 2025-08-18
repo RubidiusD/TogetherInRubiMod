@@ -11,7 +11,7 @@ import togetherinrubimod.util.CardStats;
 import togetherinrubimod.powers.Sinner;
 
 public class UtterContempt extends BaseCard {
-    public static final String ID = makeID(UtterContempt.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("togetherinrubimod:" + UtterContempt.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,

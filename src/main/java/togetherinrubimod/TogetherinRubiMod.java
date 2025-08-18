@@ -50,12 +50,6 @@ public class TogetherinRubiMod implements
     private static final String resourcesFolder = checkResourcesPath();
     public static final Logger logger = LogManager.getLogger(modID); //Used to output to the console.
 
-    //This is used to prefix the IDs of various objects like cards and relics,
-    //to avoid conflicts between different mods using the same name for things.
-    public static String makeID(String id) {
-        return modID + ":" + id;
-    }
-
     //This will be called by ModTheSpire because of the @SpireInitializer annotation at the top of the class.
     public static void initialize() {
         new TogetherinRubiMod();
@@ -267,7 +261,7 @@ public class TogetherinRubiMod implements
                 //return a string to be used as a unique ID for this glow.
                 //It's recommended to follow the usual modding convention of "modname:name"
 
-                return makeID("Glow");
+                return ("togetherinrubimod:" + "Glow");
             }
         });
     }

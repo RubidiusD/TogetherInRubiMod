@@ -10,5 +10,11 @@
     "DESCRIPTIONS": [
       "rubimod:Sin applies to Poison damage."
     ]
+  },
+  "togetherinrubimod:AvengerPower": {
+    "NAME": "Avenger",
+    "DESCRIPTIONS": [
+      "Whenever an ally consumes Artifact, create ", " Punish in hand.", " Punishes in hand,"
+    ]
   }
 }

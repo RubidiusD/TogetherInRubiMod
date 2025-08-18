@@ -19,7 +19,7 @@ import togetherinrubimod.util.CardStats;
 import tisCardPack.actions.ApplyTauntAction;
 
 public class MouthEssence extends BaseCard {
-    public static final String ID = makeID(MouthEssence.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("togetherinrubimod:" + MouthEssence.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,

@@ -16,7 +16,7 @@ import togetherinrubimod.cards.BaseCard;
 import togetherinrubimod.util.CardStats;
 
 public class KindofHisThing extends BaseCard {
-    public static final String ID = makeID(KindofHisThing.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("togetherinrubimod:" + KindofHisThing.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,

@@ -11,7 +11,7 @@ import togetherinrubimod.cards.BaseCard;
 import togetherinrubimod.util.CardStats;
 
 public class HegemonyAura extends BaseCard {
-    public static final String ID = makeID(HegemonyAura.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("togetherinrubimod:" + HegemonyAura.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,

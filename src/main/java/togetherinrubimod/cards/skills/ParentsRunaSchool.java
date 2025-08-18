@@ -10,7 +10,7 @@ import togetherinrubimod.cards.BaseCard;
 import togetherinrubimod.util.CardStats;
 
 public class ParentsRunaSchool extends BaseCard {
-    public static final String ID = makeID(ParentsRunaSchool.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("togetherinrubimod:" + ParentsRunaSchool.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
@@ -19,26 +19,16 @@ public class ParentsRunaSchool extends BaseCard {
             1    // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 0;
-    private static final int UPG_MAGIC = 1;
-
     public ParentsRunaSchool() {
         super(ID, info); // calls the parent constructor
 
-        setMagic(MAGIC, UPG_MAGIC); // self-explanatory
+        setCostUpgrade(0);
         cardsToPreview = new Insight();
     }
 
     @Override
-    public void upgrade() {
-        super.upgrade();
-
-        cardsToPreview.upgrade();
-    }
-
-    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new RunSchoolAction(magicNumber > 0));
+        addToBot(new RunSchoolAction());
     }
 
     @Override

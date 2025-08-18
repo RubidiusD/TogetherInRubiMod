@@ -32,13 +32,17 @@
   },
   "togetherinrubimod:ParentsRunaSchool": {
     "NAME": "..and Drink!",
-    "DESCRIPTION": "Shuffle an Insight into ALL draw piles.",
-    "UPGRADED_DESCRIPTION": "Shuffle an Insight+ into ALL draw piles."
+    "DESCRIPTION": "Shuffle an Insight into ALL draw piles."
   },
   "togetherinrubimod:WayoftheReaper": {
     "NAME": "Way of the Reaper",
     "DESCRIPTION": "Add a Punish to ALL allies hands.",
     "UPGRADED_DESCRIPTION": "Add a Punish+ to ALL allies hands."
+  },
+  "togetherinrubimod:Plague": {
+    "NAME": "Plague",
+    "DESCRIPTION": "Add a Vector to ALL allies draw piles.",
+    "UPGRADED_DESCRIPTION": "Add a Vector+ to ALL allies draw piles."
   },
   "togetherinrubimod:UtterContempt": {
     "NAME": "Utter Contempt",
@@ -49,8 +53,8 @@
     "DESCRIPTION": "Cleanse all enemies of debuffs. ALL allies gain [E] and draw 1 card. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Cleanse all enemies of debuffs. ALL allies gain [E] and draw 1 card. NL Exhaust."
   },
-  "togetherinrubimod:BasicTolerance": {
-    "NAME": "Basic Tolerance",
+  "togetherinrubimod:Immunisation": {
+    "NAME": "Immunisation",
     "DESCRIPTION": "All players gain !M! Artifact."
   },
   "togetherinrubimod:HegemonyAura": {
@@ -66,5 +70,10 @@
   "togetherinrubimod:Moralise": {
     "NAME": "Moralise",
     "DESCRIPTION": "Deal !D! damage and apply Weak to ALL."
+  },
+  "togetherinrubimod:Avenger": {
+    "NAME": "Avenger",
+    "DESCRIPTION": "Ethereal. NL Whenever an ally consumes Artifact, create a Punish.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever an ally consumes Artifact, create a Punish."
   }
 }

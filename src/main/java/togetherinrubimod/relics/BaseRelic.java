@@ -1,17 +1,18 @@
 package togetherinrubimod.relics;
 
-import basemod.abstracts.CustomRelic;
 import basemod.helpers.RelicType;
-import togetherinrubimod.util.GeneralUtils;
-import togetherinrubimod.util.TextureLoader;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import rubimod.util.GeneralUtils;
+import rubimod.util.TextureLoader;
+import spireTogether.relics.CustomMultiplayerRelic;
 
-import static togetherinrubimod.TogetherinRubiMod.relicPath;
+import static rubimod.RubiMod.relicPath;
 
-public abstract class BaseRelic extends CustomRelic {
+public abstract class BaseRelic extends CustomMultiplayerRelic {
     public AbstractCard.CardColor pool = null;
     public RelicType relicType = RelicType.SHARED;
     protected String imageName;
@@ -30,7 +31,11 @@ public abstract class BaseRelic extends CustomRelic {
     //To use a basegame relic image, just pass in the imagename used by a basegame relic instead of the ID.
     //eg. "calendar.png"
     public BaseRelic(String id, String imageName, RelicTier tier, LandingSound sfx) {
-        super(testStrings(id), notPng(imageName) ? "" : imageName, tier, sfx);
+        super(testStrings(id),
+                TextureLoader.getTextureNull(relicPath(imageName + ".png"), true),
+                TextureLoader.getTextureNull(relicPath(imageName + "Outline.png"), true),
+                tier, sfx);
+//        super(testStrings(id), notPng(imageName) ? "" : imageName, tier, sfx);
 
         this.imageName = imageName;
         if (notPng(imageName)) {
@@ -94,7 +99,7 @@ public abstract class BaseRelic extends CustomRelic {
         if (text == null) {
             throw new RuntimeException("The \"" + ID + "\" relic does not have associated text. Make sure " +
                     "there's no issue with the RelicStrings.json file, and that the ID in the json file matches the " +
-                    "relic's ID. It should look like \"togetherinrubimod:" + GeneralUtils.removePrefix(ID) + "\".");
+                    "relic's ID. It should look like \"rubimod:" + GeneralUtils.removePrefix(ID) + "\".");
         }
         return ID;
     }
@@ -102,4 +107,6 @@ public abstract class BaseRelic extends CustomRelic {
     private static boolean notPng(String name) {
         return !name.endsWith(".png");
     }
+
+    public void onArtifactLost(AbstractCreature owner) {}
 }

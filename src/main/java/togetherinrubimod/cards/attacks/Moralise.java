@@ -9,7 +9,7 @@ import togetherinrubimod.cards.BaseCard;
 import togetherinrubimod.util.CardStats;
 
 public class Moralise extends BaseCard {
-    public static final String ID = makeID(Moralise.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("togetherinrubimod:" + Moralise.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.ATTACK,
@@ -18,10 +18,13 @@ public class Moralise extends BaseCard {
             1 // card cost!! (-1 is X, -2 is unplayable)
     );
 
+    private static final int DAMAGE = 0;
+
     public Moralise() {
         super(ID, info); // calls the parent
 
         setCostUpgrade(0);
+        setDamage(DAMAGE);
     }
 
     @Override

@@ -25,7 +25,6 @@ import static togetherinrubimod.util.TextureLoader.getCardTextureString;
 public abstract class BaseCard extends CustomMultiplayerCard {
     final private static Map<String, DynamicVariable> customVars = new HashMap<>();
 
-    protected static String makeID(String name) { return TogetherinRubiMod.makeID(name); }
     protected CardStrings cardStrings;
 
     protected boolean upgradesDescription;
@@ -604,7 +603,7 @@ public abstract class BaseCard extends CustomMultiplayerCard {
 
         public QuickDynamicVariable(String key) {
             this.localKey = key;
-            this.key = makeID(key);
+            this.key = ("togetherinrubimod:" + key);
         }
 
         @Override

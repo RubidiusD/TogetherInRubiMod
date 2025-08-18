@@ -9,21 +9,12 @@ import spireTogether.network.objects.items.NetworkCard;
 import spireTogether.util.SpireHelp;
 
 public class RunSchoolAction extends AbstractGameAction {
-    private final boolean upgraded;
-
-    public RunSchoolAction(boolean upgraded)
-    {
-        super();
-        this.upgraded = upgraded;
-    }
+    public RunSchoolAction() { super(); }
 
     @Override
     public void update()
     {
         AbstractCard c = new com.megacrit.cardcrawl.cards.tempCards.Insight();
-        if (this.upgraded) {
-            c.upgrade();
-        }
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
             e.addCard(NetworkCard.Generate(c), CardGroup.CardGroupType.DRAW_PILE);
         addToTop(new MakeTempCardInDrawPileAction(c, 1, true, true));

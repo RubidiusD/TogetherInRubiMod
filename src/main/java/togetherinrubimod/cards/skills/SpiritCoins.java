@@ -12,7 +12,7 @@ import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 
 public class SpiritCoins extends BaseCard {
-    public static final String ID = makeID(SpiritCoins.class.getSimpleName()); // makeID adds the mod name
+    public static final String ID = ("togetherinrubimod:" + SpiritCoins.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
