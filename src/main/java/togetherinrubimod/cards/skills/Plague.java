@@ -1,16 +1,10 @@
 package togetherinrubimod.cards.skills;
 
-import com.evacipated.cardcrawl.modthespire.lib.SpireInstrumentPatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import javassist.CannotCompileException;
-import javassist.expr.ExprEditor;
-import javassist.expr.MethodCall;
-import rubimod.cards.skills.Punish;
+import rubimod.cards.skills.Vector;
 import rubimod.character.Hegemon;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.network.objects.items.NetworkCard;
@@ -31,7 +25,7 @@ public class Plague extends BaseCard {
     public Plague() {
         super(ID, info); // calls the parent constructor
 
-        cardsToPreview = new Punish();
+        cardsToPreview = new Vector();
     }
 
     @Override
@@ -50,20 +44,5 @@ public class Plague extends BaseCard {
     @Override
     public AbstractCard makeCopy() { // Optional
         return new Plague();
-    }
-
-    @SpirePatch2(clz= Plague.class, method= SpirePatch.CONSTRUCTOR, paramtypez = {}, requiredModId = "rubimod")
-    public static class VectorPatch {
-        @SpireInstrumentPatch
-        public static ExprEditor Instrument() {
-            return new ExprEditor() {
-                @Override
-                public void edit(MethodCall m) throws CannotCompileException {
-                    if (m.getMethodName().equals("Punish")) {
-                        m.replace("$_ = rubimod.cards.skills.Vector()");
-                    }
-                }
-            };
-        }
     }
 }

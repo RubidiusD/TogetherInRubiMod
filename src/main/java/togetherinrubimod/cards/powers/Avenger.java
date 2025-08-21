@@ -20,7 +20,7 @@ public class Avenger extends BaseCard {
             CardType.POWER,
             CardRarity.RARE,
             CardTarget.SELF,
-            2    // card cost!! (-1 is X, -2 is unplayable)
+            1    // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int MAGIC = 1;

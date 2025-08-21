@@ -28,7 +28,8 @@
   },
   "togetherinrubimod:UmbralArmament": {
     "NAME": "Umbral Armaments",
-    "DESCRIPTION": "ALL allies apply !M! rubimod:Necrotoxin on hit this turn."
+    "DESCRIPTION": "ALL allies apply !M! rubimod:Necrotoxin on hit this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "ALL allies apply !M! rubimod:Necrotoxin on hit this turn."
   },
   "togetherinrubimod:ParentsRunaSchool": {
     "NAME": "..and Drink!",
@@ -64,8 +65,8 @@
   },
   "togetherinrubimod:KindofHisThing": {
     "NAME": "Kind of His Thing",
-    "DESCRIPTION": "Gain 15 rubimod:Necrotoxin. NL. ALL players gain buffs over time.",
-    "UPGRADE_DESCRIPTION": "Gain 15 rubimod:Necrotoxin. NL. ALL players gain buffs and lose !M! hp to draw !M! each turn."
+    "DESCRIPTION": "ALL players gain buffs over time. NL It's kind of your \"Thing\".",
+    "UPGRADE_DESCRIPTION": "ALL players gain buffs and lose !M! hp to draw !M! each turn. NL It's kind of your \"Thing\"."
   },
   "togetherinrubimod:Moralise": {
     "NAME": "Moralise",
@@ -75,5 +76,13 @@
     "NAME": "Avenger",
     "DESCRIPTION": "Ethereal. NL Whenever an ally consumes Artifact, create a Punish.",
     "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever an ally consumes Artifact, create a Punish."
+  },
+  "togetherinrubimod:KindofYourThing": {
+    "NAME": "Kind of Your Thing",
+    "DESCRIPTION": "Retain. NL At the end of your turn, lose !M! health."
+  },
+  "togetherinrubimod:Untether": {
+    "NAME": "Untether",
+    "DESCRIPTION": "Deal target ally !D! damage, increase their base draw by 1 and apply 3 tisCardPack:Insanity"
   }
 }
