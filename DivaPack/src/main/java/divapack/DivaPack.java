@@ -3,6 +3,7 @@ package divapack;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.*;
+import com.evacipated.cardcrawl.modthespire.lib.SpireSideload;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import divapack.cards.BaseCard;
@@ -28,6 +29,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @SpireInitializer
+@SpireSideload(modIDs = {"PatchEverything"})
 public class DivaPack implements
         EditCardsSubscriber,
         EditRelicsSubscriber,

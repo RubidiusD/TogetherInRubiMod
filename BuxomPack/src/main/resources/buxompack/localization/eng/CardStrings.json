@@ -8,5 +8,31 @@
       "If you need to use it for stuff.",
       "Blizzard is a good example for this."
     ]
+  },
+  "BuxomPack:FriendlyShock": {
+    "NAME": "Friendly Shock",
+    "DESCRIPTION": "Add !M! *Shocks to ALL Allies' draw piles, with !BuxomPack:Scale! bonus damage for each time you gained buxommod:Buxom this turn. NL Exhaust."
+  },
+  "BuxomPack:GainBearings": {
+    "NAME": "Gain Bearings",
+    "DESCRIPTION": "ALL Allies draw a status card. Draw 1 card.",
+    "UPGRADE_DESCRIPTION": "ALL Allies draw !M! status cards. Draw 1 card."
+  },
+  "BuxomPack:Fawning": {
+    "NAME": "Fawning",
+    "DESCRIPTION": "When an Ally exhausts a card, gain !M! buxommod:Milk."
+  },
+  "BuxomPack:Motivation": {
+    "NAME": "Motivation",
+    "DESCRIPTION": "Unplayable. NL On Exhaust, ALL Allies draw 1 additional card per turn.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL On Exhaust, ALL Allies draw 1 additional card per turn and immediately draw !M!."
+  },
+  "BuxomPack:Consolation": {
+    "NAME": "Consolation",
+    "DESCRIPTION": "Unplayable. NL On Exhaust, ALL Allies gain !M! Block and add a copy to your discard pile."
+  },
+  "BuxomPack:BlushingStrike": {
+    "NAME": "Blushing Strike",
+    "DESCRIPTION": "Deal !D! Damage. If played by a class other than The Buxom, also gain !M! buxommod:Lactating."
   }
 }

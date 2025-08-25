@@ -4,5 +4,11 @@
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
+  },
+  "BuxomPack:FawningPower": {
+    "NAME": "Fawning",
+    "DESCRIPTIONS": [
+      "When an Ally exhausts a card, gain #b", " buxommod:Milk."
+    ]
   }
 }

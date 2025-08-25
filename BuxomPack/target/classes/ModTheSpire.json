@@ -3,9 +3,9 @@
   "name": "TiS Buxom Pack",
   "author_list": ["Muku", "Rubidius \"Rubi\" Dext"],
   "description": "Buxom Multiplayer Mod",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
-  "dependencies": ["basemod", "stslib", "rubimod", "spireTogether", "tisCardPack"],
+  "dependencies": ["basemod", "stslib", "BuxomMod", "spireTogether", "tisCardPack", "PatchEverything"],
   "update_json": ""
 }

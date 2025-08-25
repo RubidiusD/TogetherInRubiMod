@@ -71,7 +71,7 @@
         <dependency>
             <groupId>rubimod</groupId>
             <artifactId>rubimod</artifactId>
-            <version>1.4.2</version>
+            <version>1.5.0</version>
             <scope>system</scope>
             <systemPath>${steam.path}/workshop/content/646570/3531504374/rubimod.jar</systemPath>
         </dependency>

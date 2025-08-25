@@ -24,7 +24,7 @@
 
     <!-- This information will be displayed in ModTheSpire, the modded launcher. -->
     <name>TiS Buxom Pack</name>
-    <version>0.0.0</version>
+    <version>0.0.1</version>
     <!-- Avoid using \ in this description, as they can cause the description to fail to load. -->
     <!-- If you really want to use them, you'll need to "escape" them by putting another one in front, like \\ -->
     <description>Buxom Multiplayer Mod</description>
@@ -85,6 +85,13 @@
             <version>2.0</version>
             <scope>system</scope>
             <systemPath>${steam.path}/workshop/content/646570/3148331689/TogetherInSpireBoosterPack.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>everythingpatchmod</groupId>
+            <artifactId>everythingPatchMod</artifactId>
+            <version>0.3.5</version>
+            <scope>system</scope>
+            <systemPath>${steam.path}/workshop/content/646570/3548044797/everythingPatchMod.jar</systemPath>
         </dependency>
     </dependencies>
 

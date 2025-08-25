@@ -5,6 +5,7 @@ import basemod.BaseMod;
 import basemod.helpers.CardBorderGlowManager;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
+import com.evacipated.cardcrawl.modthespire.lib.SpireSideload;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.relics.Ginger;
@@ -38,6 +39,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @SpireInitializer
+@SpireSideload(modIDs = {"PatchEverything"})
 public class HegemonPack implements
         EditCardsSubscriber,
         EditRelicsSubscriber,
@@ -64,8 +66,8 @@ public class HegemonPack implements
 
     @Override
     public void receivePostInitialize() {
-//        Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
-//        BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
+        Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
+        BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
     }
 
     /*----------Localization----------*/

@@ -3,18 +3,18 @@ package buxompack;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.*;
+import buxompack.util.GeneralUtils;
+import buxompack.util.TextureLoader;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import buxompack.cards.BaseCard;
 import buxompack.relics.BaseRelic;
-import buxompack.util.GeneralUtils;
 import buxompack.util.KeywordInfo;
-import buxompack.util.TextureLoader;
 import com.badlogic.gdx.Files;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglFileHandle;
 import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.ModInfo;
@@ -57,8 +57,8 @@ public class BuxomPack implements
 
     @Override
     public void receivePostInitialize() {
-//        Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
-//        BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
+        Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
+        BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
     }
 
     /*----------Localization----------*/

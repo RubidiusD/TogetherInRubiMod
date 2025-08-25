@@ -8,5 +8,13 @@
       "If you need to use it for stuff.",
       "Blizzard is a good example for this."
     ]
+  },
+  "DivaPack:GrandEncore": {
+    "NAME": "Grand Encore",
+    "DESCRIPTION": "Set ALL Allies' dumbjokedivamod:Rhythm to 0 next turn."
+  },
+  "DivaPack:Counterpoint": {
+    "NAME": "Counterpoint",
+    "DESCRIPTION": "Deal !D! Damage. If played by a class other than The Diva, also apply !M! dumbjokedivamod:Captivation."
   }
 }
