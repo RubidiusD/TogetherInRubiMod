@@ -1,0 +1,11 @@
+{
+  "modid": "BuxomPack",
+  "name": "${project.name}",
+  "author_list": ["Muku", "${author}"],
+  "description": "!(project.description)",
+  "version": "${project.version}",
+  "sts_version": "${SlayTheSpire.version}",
+  "mts_version": "${ModTheSpire.version}",
+  "dependencies": ["basemod", "stslib", "rubimod", "spireTogether", "tisCardPack"],
+  "update_json": ""
+}

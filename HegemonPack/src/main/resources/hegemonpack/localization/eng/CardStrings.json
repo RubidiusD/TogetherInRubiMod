@@ -1,0 +1,88 @@
+{
+  "HegemonPack:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description. NL Second line.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "HegemonPack:SympathyStrike": {
+    "NAME": "Sympathy Strike",
+    "DESCRIPTION": "Deal !D! damage. If played by a class other than a Hegemon, deal !M! rubimod:Necrotic damage on hit."
+  },
+  "HegemonPack:MouthEssence": {
+    "NAME": "Mouth Essence",
+    "DESCRIPTION": "Apply !M! tisCardPack:Taunt. Deal !D! damage."
+  },
+  "HegemonPack:Sandwiches": {
+    "NAME": "Sandwiches",
+    "DESCRIPTION": "Heal ALL players by !M!. NL Exhaust."
+  },
+  "HegemonPack:SpiritCoins": {
+    "NAME": "Spirit Coins",
+    "DESCRIPTION": "Give ALL allies !B!x3 Block, rubimod:Bleeding, and !HegemonPack:Leech! rubimod:Leech_Toxin.",
+    "UPGRADED_DESCRIPTION": "Retain. NL Give ALL allies !B!x3 Block, rubimod:Bleeding, and !HegemonPack:Leech! rubimod:Leech_Toxin."
+  },
+  "HegemonPack:UmbralArmament": {
+    "NAME": "Umbral Armaments",
+    "DESCRIPTION": "ALL allies apply !M! rubimod:Necrotoxin on hit this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "ALL allies apply !M! rubimod:Necrotoxin on hit this turn."
+  },
+  "HegemonPack:ParentsRunaSchool": {
+    "NAME": "..and Drink!",
+    "DESCRIPTION": "Shuffle an Insight into ALL draw piles."
+  },
+  "HegemonPack:WayoftheReaper": {
+    "NAME": "Way of the Reaper",
+    "DESCRIPTION": "Add a Punish to ALL allies hands.",
+    "UPGRADED_DESCRIPTION": "Add a Punish+ to ALL allies hands."
+  },
+  "HegemonPack:Plague": {
+    "NAME": "Plague",
+    "DESCRIPTION": "Add a Vector to ALL allies draw piles.",
+    "UPGRADED_DESCRIPTION": "Add a Vector+ to ALL allies draw piles."
+  },
+  "HegemonPack:UtterContempt": {
+    "NAME": "Utter Contempt",
+    "DESCRIPTION": "Innate. NL Apply !M! rubimod:Sin. NL This enemy's rubimod:Sin applies to their Poison."
+  },
+  "HegemonPack:SilverFeast": {
+    "NAME": "Silver Feast",
+    "DESCRIPTION": "Cleanse all enemies of debuffs. ALL allies gain [E] and draw 1 card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Cleanse all enemies of debuffs. ALL allies gain [E] and draw 1 card. NL Exhaust."
+  },
+  "HegemonPack:Immunisation": {
+    "NAME": "Immunisation",
+    "DESCRIPTION": "All players gain !M! Artifact."
+  },
+  "HegemonPack:HegemonyAura": {
+    "NAME": "Hegemony Aura",
+    "DESCRIPTION": "Whenever an ally is attacked, apply !M! rubimod:Sin back.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever an ally is attacked, apply !M! rubimod:Sin back."
+  },
+  "HegemonPack:KindofHisThing": {
+    "NAME": "Kind of His Thing",
+    "DESCRIPTION": "ALL players gain buffs over time. NL It's kind of your \"Thing\".",
+    "UPGRADE_DESCRIPTION": "ALL players gain buffs and lose !M! hp to draw !M! each turn. NL It's kind of your \"Thing\"."
+  },
+  "HegemonPack:Moralise": {
+    "NAME": "Moralise",
+    "DESCRIPTION": "Deal !D! damage and apply Weak to ALL."
+  },
+  "HegemonPack:Avenger": {
+    "NAME": "Avenger",
+    "DESCRIPTION": "Ethereal. NL Whenever an ally consumes Artifact, create a Punish.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever an ally consumes Artifact, create a Punish."
+  },
+  "HegemonPack:KindofYourThing": {
+    "NAME": "Kind of Your Thing",
+    "DESCRIPTION": "Retain. NL At the end of your turn, lose !M! health."
+  },
+  "HegemonPack:Untether": {
+    "NAME": "Untether",
+    "DESCRIPTION": "Deal target ally !D! damage, increase their base draw by 1 and apply 3 tisCardPack:Insanity"
+  }
+}

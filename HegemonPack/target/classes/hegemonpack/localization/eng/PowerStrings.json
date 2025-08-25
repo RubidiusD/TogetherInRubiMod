@@ -1,0 +1,20 @@
+{
+  "HegemonPack:PowerID": {
+    "NAME": "Ultimate Power",
+    "DESCRIPTIONS": [
+      "You are Very Cool and Strong."
+    ]
+  },
+  "HegemonPack:Sinner": {
+    "NAME": "Sinner",
+    "DESCRIPTIONS": [
+      "rubimod:Sin applies to Poison damage."
+    ]
+  },
+  "HegemonPack:AvengerPower": {
+    "NAME": "Avenger",
+    "DESCRIPTIONS": [
+      "Whenever an ally consumes Artifact, create ", " Punish in hand.", " Punishes in hand,"
+    ]
+  }
+}

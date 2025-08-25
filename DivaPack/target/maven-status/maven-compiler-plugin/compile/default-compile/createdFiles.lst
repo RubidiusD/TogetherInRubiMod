@@ -1,0 +1,15 @@
+divapack\util\TriFunction.class
+divapack\cards\BaseCard$QuickDynamicVariable.class
+divapack\relics\BaseRelic$1.class
+divapack\util\GeneralUtils.class
+divapack\util\TextureLoader.class
+divapack\util\CardStats.class
+divapack\cards\BaseCard$VariableType.class
+divapack\DivaPack.class
+divapack\relics\BaseRelic.class
+divapack\powers\BasePower.class
+divapack\cards\BaseCard.class
+divapack\util\TextureLoader$1.class
+divapack\cards\BaseCard$LocalVarInfo.class
+divapack\potions\BasePotion.class
+divapack\util\KeywordInfo.class
