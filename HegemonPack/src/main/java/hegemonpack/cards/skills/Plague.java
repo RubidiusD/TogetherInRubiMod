@@ -1,5 +1,6 @@
 package hegemonpack.cards.skills;
 
+import com.megacrit.cardcrawl.actions.utility.ShowCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,7 +11,6 @@ import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.network.objects.items.NetworkCard;
 import spireTogether.util.SpireHelp;
 import hegemonpack.cards.BaseCard;
-import hegemonpack.util.CardStats;
 
 public class Plague extends BaseCard {
     public static final String ID = ("HegemonPack:" + Plague.class.getSimpleName());
@@ -32,6 +32,7 @@ public class Plague extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
             e.addCard(NetworkCard.Generate(cardsToPreview), CardGroup.CardGroupType.HAND);
+        addToBot(new ShowCardAction(cardsToPreview));
     }
 
     @Override

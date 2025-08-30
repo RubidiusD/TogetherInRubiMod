@@ -8,7 +8,6 @@ import rubimod.cards.skills.Punish;
 import rubimod.character.Hegemon;
 import hegemonpack.cards.BaseCard;
 import hegemonpack.powers.AvengerPower;
-import hegemonpack.util.CardStats;
 
 public class Avenger extends BaseCard {
     public static final String ID = ("HegemonPack:" + Avenger.class.getSimpleName());

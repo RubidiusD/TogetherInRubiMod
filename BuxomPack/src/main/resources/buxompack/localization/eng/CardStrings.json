@@ -24,15 +24,20 @@
   },
   "BuxomPack:Motivation": {
     "NAME": "Motivation",
-    "DESCRIPTION": "Unplayable. NL On Exhaust, ALL Allies draw 1 additional card per turn.",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL On Exhaust, ALL Allies draw 1 additional card per turn and immediately draw !M!."
+    "DESCRIPTION": "Unplayable. NL buxommod:Bouncy. NL On Exhaust, ALL Allies draw 1 additional card per turn.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL buxommod:Bouncy. NL On Exhaust, ALL Allies draw 1 additional card per turn and immediately draw !M!."
   },
   "BuxomPack:Consolation": {
     "NAME": "Consolation",
-    "DESCRIPTION": "Unplayable. NL On Exhaust, ALL Allies gain !M! Block and add a copy to your discard pile."
+    "DESCRIPTION": "Unplayable. NL buxommod:Bouncy. NL On Exhaust, ALL Allies gain !M! Block and add a copy to your discard pile."
   },
   "BuxomPack:BlushingStrike": {
     "NAME": "Blushing Strike",
     "DESCRIPTION": "Deal !D! Damage. If played by a class other than The Buxom, also gain !M! buxommod:Lactating."
+  },
+  "BuxomPack:OmegaEnvy": {
+    "NAME": "Omega Envy",
+    "DESCRIPTION": "Deal !D! Damage. Absorb ALL non-Buxom Allies' buxommod:Buxom.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. Absorb ALL non-Buxom Allies' buxommod:Buxom"
   }
 }

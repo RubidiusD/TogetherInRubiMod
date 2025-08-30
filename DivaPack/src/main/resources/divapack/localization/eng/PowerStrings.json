@@ -5,8 +5,12 @@
       "You are Very Cool and Strong."
     ]
   },
-  "DivaPack:EncorePower": {
-    "NAME": "Encore",
+  "DivaPack:ReprisePower": {
+    "NAME": "Reprise",
     "DESCRIPTIONS": ["Sets Rhythm to 0 at the start of your turn."]
+  },
+  "DivaPack:SkippedBeatsPower": {
+    "NAME": "Skipped Beats",
+    "DESCRIPTIONS": ["Card draw is distributed among Allies equal to excess energy", " + #b", " each turn."]
   }
 }

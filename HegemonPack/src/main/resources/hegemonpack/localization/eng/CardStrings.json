@@ -28,8 +28,8 @@
   },
   "HegemonPack:UmbralArmament": {
     "NAME": "Umbral Armaments",
-    "DESCRIPTION": "ALL allies apply !M! rubimod:Necrotoxin on hit this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "ALL allies apply !M! rubimod:Necrotoxin on hit this turn."
+    "DESCRIPTION": "ALL allies apply !M! rubimod:LeechToxin on hit this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "ALL allies apply !M! rubimod:LeechToxin on hit this turn."
   },
   "HegemonPack:ParentsRunaSchool": {
     "NAME": "..and Drink!",

@@ -1,31 +1,31 @@
-package hegemonpack.cards.skills;
+package divapack.cards.skills;
 
 import com.megacrit.cardcrawl.actions.utility.ShowCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.cards.skills.Punish;
-import rubimod.character.Hegemon;
+import divapack.cards.BaseCard;
+import divapack.cards.attacks.Po;
+import dumbjokedivamod.character.Diva;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.network.objects.items.NetworkCard;
 import spireTogether.util.SpireHelp;
-import hegemonpack.cards.BaseCard;
 
-public class WayoftheReaper extends BaseCard {
-    public static final String ID = ("HegemonPack:" + WayoftheReaper.class.getSimpleName());
+public class PoPiPo extends BaseCard {
+    public static final String ID = ("DivaPack:" + PoPiPo.class.getSimpleName());
     private static final CardStats info = new CardStats(
-            Hegemon.Meta.CARD_COLOR,
+            Diva.Meta.CARD_COLOR,
             CardType.SKILL,
             CardRarity.UNCOMMON,
             CardTarget.NONE,
             1    // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    public WayoftheReaper() {
+    public PoPiPo() {
         super(ID, info); // calls the parent constructor
 
-        cardsToPreview = new Punish();
+        this.cardsToPreview = new Po();
     }
 
     @Override
@@ -38,12 +38,11 @@ public class WayoftheReaper extends BaseCard {
     @Override
     public void upgrade() {
         super.upgrade();
-
-        cardsToPreview.upgrade();
+        this.cardsToPreview.upgrade();
     }
 
     @Override
     public AbstractCard makeCopy() { // Optional
-        return new WayoftheReaper();
+        return new PoPiPo();
     }
 }

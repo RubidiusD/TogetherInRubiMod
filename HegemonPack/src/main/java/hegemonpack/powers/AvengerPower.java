@@ -3,14 +3,10 @@ package hegemonpack.powers;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.ArtifactPower;
+import hegemonpack.AllyArtifactLostSubscriber;
 import rubimod.cards.skills.Punish;
-import spireTogether.network.P2P.P2PPlayer;
-import spireTogether.network.objects.entities.NetworkPower;
 
-import java.util.ArrayList;
-
-public class AvengerPower extends BasePower {
+public class AvengerPower extends BasePower implements AllyArtifactLostSubscriber {
     public static final String POWER_ID = ("HegemonPack:" + AvengerPower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
@@ -26,13 +22,8 @@ public class AvengerPower extends BasePower {
     }
 
     @Override
-    public void onAllyChangedPowers(P2PPlayer player, ArrayList<NetworkPower> oldPowers, ArrayList<NetworkPower> newPowers, ArrayList<NetworkPower> gainedPowers, ArrayList<NetworkPower> lostPowers) {
-        for (NetworkPower p : lostPowers)
-            if (p.realPowerID.equals(ArtifactPower.POWER_ID))
-            {
-                addToTop(new MakeTempCardInHandAction(new Punish(), amount));
-                return;
-            }
+    public void receiveAllyArtifactLost() {
+        addToTop(new MakeTempCardInHandAction(new Punish(), amount));
     }
 
     public void updateDescription() {

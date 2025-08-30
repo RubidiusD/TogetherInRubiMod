@@ -3,11 +3,14 @@ package divapack;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.*;
+import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.evacipated.cardcrawl.modthespire.lib.SpireSideload;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import divapack.cards.BaseCard;
 import divapack.relics.BaseRelic;
+import divapack.util.GeneralUtils;
 import divapack.util.KeywordInfo;
 import com.badlogic.gdx.Files;
 import com.badlogic.gdx.Gdx;
@@ -21,9 +24,11 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
+import divapack.util.TextureLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
+import spireTogether.network.P2P.P2PRequests;
 
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -56,8 +61,8 @@ public class DivaPack implements
 
     @Override
     public void receivePostInitialize() {
-//        Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
-//        BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
+        Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
+        BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
     }
 
     /*----------Localization----------*/

@@ -1,9 +1,9 @@
 {
   "modid": "HegemonPack",
-  "name": "TiS Hegemon Pack",
+  "name": "TiS Hegemon Booster Pack",
   "author_list": ["Rubidius \"Rubi\" Dext"],
   "description": "Because random nonsense needed a sequel.\n\nStill largely inspired by He Who Fights With Monsters \n\nby Shirtaloon \n\nbut now with Together in Spire compatibility!!",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
   "dependencies": ["basemod", "stslib", "rubimod", "spireTogether", "tisCardPack"],

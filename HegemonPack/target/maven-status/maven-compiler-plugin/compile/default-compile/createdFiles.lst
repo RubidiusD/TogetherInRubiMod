@@ -12,6 +12,7 @@ hegemonpack\cards\attacks\MouthEssence$TauntPatch.class
 hegemonpack\cards\BaseCard.class
 hegemonpack\relics\BaseRelic.class
 hegemonpack\powers\BasePower.class
+hegemonpack\cards\BaseCard$CardStats.class
 hegemonpack\cards\skills\Sandwiches.class
 hegemonpack\HegemonPack$1.class
 hegemonpack\cards\BaseCard$VariableType.class
@@ -21,16 +22,18 @@ hegemonpack\cards\skills\WayoftheReaper.class
 hegemonpack\powers\AvengerPower.class
 hegemonpack\powers\Sinner.class
 hegemonpack\util\TriFunction.class
+hegemonpack\AllyArtifactLostSubscriber$AnalyzeMessagePatch.class
 hegemonpack\cards\BaseCard$QuickDynamicVariable.class
+hegemonpack\AllyArtifactLostSubscriber$ArtifactPatch.class
 hegemonpack\relics\BaseRelic$1.class
 hegemonpack\potions\BasePotion.class
 hegemonpack\actions\RunSchoolAction.class
 hegemonpack\util\KeywordInfo.class
 hegemonpack\cards\KindofYourThing.class
-hegemonpack\util\CardStats.class
 hegemonpack\cards\attacks\MouthEssence$TauntPlayerPatch.class
 hegemonpack\cards\skills\ParentsRunaSchool.class
 hegemonpack\cards\BaseCard$LocalVarInfo.class
+hegemonpack\AllyArtifactLostSubscriber.class
 hegemonpack\cards\powers\Immunisation.class
 hegemonpack\cards\skills\UmbralArmament.class
 hegemonpack\util\GeneralUtils.class

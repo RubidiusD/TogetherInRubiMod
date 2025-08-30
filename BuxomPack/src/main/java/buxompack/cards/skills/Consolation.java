@@ -3,7 +3,6 @@ package buxompack.cards.skills;
 import BuxomMod.characters.TheBuxom;
 import BuxomMod.patches.CustomTags;
 import buxompack.cards.BaseCard;
-import buxompack.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;

@@ -8,7 +8,6 @@ import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 import hegemonpack.cards.BaseCard;
 import rubimod.character.Hegemon;
-import hegemonpack.util.CardStats;
 
 public class UmbralArmament extends BaseCard {
     public static final String ID = ("HegemonPack:" + UmbralArmament.class.getSimpleName());

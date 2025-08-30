@@ -1,5 +1,6 @@
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\actions\MoraliseAction.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\actions\RunSchoolAction.java
+C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\AllyArtifactLostSubscriber.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\attacks\Moralise.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\attacks\MouthEssence.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\attacks\SympathyStrike.java
@@ -23,7 +24,6 @@ C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hege
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\powers\BasePower.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\powers\Sinner.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\relics\BaseRelic.java
-C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\util\CardStats.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\util\GeneralUtils.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\util\KeywordInfo.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\util\TextureLoader.java

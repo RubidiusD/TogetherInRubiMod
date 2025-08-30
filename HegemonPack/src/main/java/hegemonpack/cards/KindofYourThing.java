@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import hegemonpack.util.CardStats;
 
 public class KindofYourThing extends BaseCard {
     public static final String ID = ("HegemonPack:" + KindofYourThing.class.getSimpleName());

@@ -9,7 +9,6 @@ import rubimod.character.Hegemon;
 import spireTogether.monsters.CharacterEntity;
 import tisCardPack.powers.InsanityPower;
 import hegemonpack.cards.BaseCard;
-import hegemonpack.util.CardStats;
 
 public class Untether extends BaseCard {
     public static final String ID = ("HegemonPack:" + Untether.class.getSimpleName());

@@ -3,7 +3,6 @@ package buxompack.cards.powers;
 import BuxomMod.characters.TheBuxom;
 import buxompack.actions.ShockAction;
 import buxompack.cards.BaseCard;
-import buxompack.util.CardStats;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;

@@ -9,7 +9,6 @@ import rubimod.character.Hegemon;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 import hegemonpack.cards.BaseCard;
-import hegemonpack.util.CardStats;
 
 public class Immunisation extends BaseCard {
     public static final String ID = ("HegemonPack:" + Immunisation.class.getSimpleName());

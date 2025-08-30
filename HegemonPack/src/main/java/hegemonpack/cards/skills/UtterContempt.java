@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hegemonpack.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Sin;
-import hegemonpack.util.CardStats;
 import hegemonpack.powers.Sinner;
 
 public class UtterContempt extends BaseCard {

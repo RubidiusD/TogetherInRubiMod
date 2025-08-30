@@ -4,7 +4,6 @@ import BuxomMod.cards.ShockStatus;
 import BuxomMod.characters.TheBuxom;
 import buxompack.actions.ShockAction;
 import buxompack.cards.BaseCard;
-import buxompack.util.CardStats;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -16,7 +15,7 @@ public class FriendlyShock extends BaseCard {
             AbstractCard.CardType.SKILL,
             AbstractCard.CardRarity.RARE,
             AbstractCard.CardTarget.NONE,
-            1    // card cost!! (-1 is X, -2 is unplayable)
+            0    // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int MAGIC = 2;

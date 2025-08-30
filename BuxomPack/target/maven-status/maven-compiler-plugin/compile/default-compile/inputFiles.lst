@@ -1,7 +1,9 @@
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\actions\AllyDrawTypeAction.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\actions\ShockAction.java
+C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\actions\TakeBuxomAction.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\BuxomPack.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\attacks\BlushingStrike.java
+C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\attacks\OmegaEnvy.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\BaseCard.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\powers\Fawning.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\skills\Consolation.java
@@ -12,7 +14,6 @@ C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxomp
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\powers\BasePower.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\powers\FawningPower.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\relics\BaseRelic.java
-C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\util\CardStats.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\util\GeneralUtils.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\util\KeywordInfo.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\util\TextureLoader.java

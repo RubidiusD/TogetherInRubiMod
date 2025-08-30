@@ -15,7 +15,6 @@ import tisCardPack.powers.TauntPlayerPower;
 import tisCardPack.powers.TauntPower;
 import hegemonpack.cards.BaseCard;
 import rubimod.character.Hegemon;
-import hegemonpack.util.CardStats;
 import tisCardPack.actions.ApplyTauntAction;
 
 public class MouthEssence extends BaseCard {

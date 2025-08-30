@@ -4,7 +4,6 @@ import basemod.BaseMod;
 import basemod.abstracts.DynamicVariable;
 import spireTogether.cards.CustomMultiplayerCard;
 import divapack.DivaPack;
-import divapack.util.CardStats;
 import divapack.util.TriFunction;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -23,6 +22,23 @@ import static divapack.util.TextureLoader.getCardTextureString;
 
 
 public abstract class BaseCard extends CustomMultiplayerCard {
+    public static class CardStats {
+        public final int baseCost;
+        public final AbstractCard.CardType cardType;
+        public final AbstractCard.CardTarget cardTarget;
+        public final AbstractCard.CardRarity cardRarity;
+        public final AbstractCard.CardColor cardColor;
+
+        public CardStats(AbstractCard.CardColor cardColor, AbstractCard.CardType cardType, AbstractCard.CardRarity cardRarity, AbstractCard.CardTarget cardTarget, int baseCost)
+        {
+            this.baseCost = baseCost;
+            this.cardType = cardType;
+            this.cardTarget = cardTarget;
+            this.cardRarity = cardRarity;
+            this.cardColor = cardColor;
+        }
+    }
+    
     final private static Map<String, DynamicVariable> customVars = new HashMap<>();
 
     protected CardStrings cardStrings;

@@ -8,10 +8,9 @@ import rubimod.powers.buff.HegemonyPower;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 import hegemonpack.cards.BaseCard;
-import hegemonpack.util.CardStats;
 
 public class HegemonyAura extends BaseCard {
-    public static final String ID = ("hegemonpack:" + HegemonyAura.class.getSimpleName());
+    public static final String ID = ("HegemonPack:" + HegemonyAura.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.POWER,

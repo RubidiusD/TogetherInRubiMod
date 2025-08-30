@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.character.Hegemon;
 import hegemonpack.actions.RunSchoolAction;
 import hegemonpack.cards.BaseCard;
-import hegemonpack.util.CardStats;
 
 public class ParentsRunaSchool extends BaseCard {
     public static final String ID = ("HegemonPack:" + ParentsRunaSchool.class.getSimpleName());

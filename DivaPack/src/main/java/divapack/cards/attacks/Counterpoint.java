@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import divapack.cards.BaseCard;
-import divapack.util.CardStats;
 import dumbjokedivamod.character.Diva;
 import dumbjokedivamod.powers.CaptivationPower;
 

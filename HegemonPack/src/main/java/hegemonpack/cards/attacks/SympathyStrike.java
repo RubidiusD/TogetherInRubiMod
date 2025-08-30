@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.character.Hegemon;
 import rubimod.powers.buff.ShadowHand;
 import hegemonpack.cards.BaseCard;
-import hegemonpack.util.CardStats;
 
 public class SympathyStrike extends BaseCard {
     public static final String ID = ("HegemonPack:" + SympathyStrike.class.getSimpleName());

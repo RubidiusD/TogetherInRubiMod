@@ -3,7 +3,6 @@ package buxompack.cards.skills;
 import BuxomMod.characters.TheBuxom;
 import buxompack.actions.AllyDrawTypeAction;
 import buxompack.cards.BaseCard;
-import buxompack.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;

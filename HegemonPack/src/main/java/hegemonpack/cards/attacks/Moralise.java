@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import rubimod.character.Hegemon;
 import hegemonpack.actions.MoraliseAction;
 import hegemonpack.cards.BaseCard;
-import hegemonpack.util.CardStats;
 
 public class Moralise extends BaseCard {
     public static final String ID = ("HegemonPack:" + Moralise.class.getSimpleName());

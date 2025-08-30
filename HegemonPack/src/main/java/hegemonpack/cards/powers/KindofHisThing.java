@@ -2,6 +2,7 @@ package hegemonpack.cards.powers;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.utility.ShowCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -12,7 +13,6 @@ import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 import hegemonpack.cards.BaseCard;
 import hegemonpack.cards.KindofYourThing;
-import hegemonpack.util.CardStats;
 
 public class KindofHisThing extends BaseCard {
     public static final String ID = ("HegemonPack:" + KindofHisThing.class.getSimpleName());

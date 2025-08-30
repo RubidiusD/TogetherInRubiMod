@@ -7,7 +7,6 @@ import hegemonpack.cards.BaseCard;
 import rubimod.character.Hegemon;
 import rubimod.powers.debuff.Bleeding;
 import rubimod.powers.debuff.LeechToxin;
-import hegemonpack.util.CardStats;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 

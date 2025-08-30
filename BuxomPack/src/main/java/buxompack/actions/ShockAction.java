@@ -2,6 +2,7 @@ package buxompack.actions;
 
 import BuxomMod.cards.ShockStatus;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.utility.ShowCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import spireTogether.network.P2P.P2PPlayer;
@@ -26,6 +27,7 @@ public class ShockAction extends AbstractGameAction {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
             for (int i = 0; i != this.amount; i ++)
                 e.addCard(NetworkCard.Generate(shockStatus), CardGroup.CardGroupType.DRAW_PILE);
+        addToTop(new ShowCardAction(shockStatus));
 
         this.isDone = true;
     }
