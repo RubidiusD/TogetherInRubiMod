@@ -1,6 +1,7 @@
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\actions\AllyDrawTypeAction.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\actions\ShockAction.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\actions\TakeBuxomAction.java
+C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\actions\UpgradeMasterAction.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\BuxomPack.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\attacks\BlushingStrike.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\attacks\OmegaEnvy.java
@@ -10,6 +11,7 @@ C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxomp
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\skills\FriendlyShock.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\skills\GainBearings.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\skills\Motivation.java
+C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\cards\skills\TestingTesting.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\potions\BasePotion.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\powers\BasePower.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\BuxomPack\src\main\java\buxompack\powers\FawningPower.java

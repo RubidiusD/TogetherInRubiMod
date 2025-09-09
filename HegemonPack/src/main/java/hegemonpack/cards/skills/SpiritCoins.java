@@ -40,7 +40,7 @@ public class SpiritCoins extends BaseCard {
             for (int i = 0; i < magicNumber; i++) {
                 e.addBlock(this.block);
             }
-            e.addPower(new Bleeding(p, p));
+            e.addPower(new Bleeding(p));
             e.addPower(new LeechToxin(p, p, customVar("Leech")));
         }
     }

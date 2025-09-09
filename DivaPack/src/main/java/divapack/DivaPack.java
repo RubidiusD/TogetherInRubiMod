@@ -28,7 +28,6 @@ import divapack.util.TextureLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
-import spireTogether.network.P2P.P2PRequests;
 
 import java.nio.charset.StandardCharsets;
 import java.util.*;

@@ -17,7 +17,7 @@ public class WayoftheReaper extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.UNCOMMON,
+            CardRarity.COMMON,
             CardTarget.NONE,
             1    // card cost!! (-1 is X, -2 is unplayable)
     );

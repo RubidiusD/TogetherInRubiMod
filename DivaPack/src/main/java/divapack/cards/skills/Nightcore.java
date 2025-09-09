@@ -41,12 +41,6 @@ public class Nightcore extends BaseCard {
     }
 
     @Override
-    public void upgrade() {
-        super.upgrade();
-        this.cardsToPreview.upgrade();
-    }
-
-    @Override
     public AbstractCard makeCopy() { // Optional
         return new Nightcore();
     }

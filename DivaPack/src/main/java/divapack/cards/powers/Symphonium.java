@@ -5,35 +5,32 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import divapack.cards.BaseCard;
-import divapack.powers.SkippedBeatsPower;
+import divapack.powers.SymphoniumPower;
 import dumbjokedivamod.character.Diva;
 
-public class SkippedBeats extends BaseCard {
-    public static final String ID = ("DivaPack:" + SkippedBeats.class.getSimpleName());
+public class Symphonium extends BaseCard {
+    public static final String ID = ("DivaPack:" + Symphonium.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Diva.Meta.CARD_COLOR,
             CardType.POWER,
-            CardRarity.UNCOMMON,
+            CardRarity.RARE,
             CardTarget.SELF,
-            0    // card cost!! (-1 is X, -2 is unplayable)
+            1    // card cost!! (-1 is X, -2 is unplayable)
     );
 
-    private static final int MAGIC = 0;
-    private static final int UPG_MAGIC = 1;
-
-    public SkippedBeats() {
+    public Symphonium() {
         super(ID, info); // calls the parent constructor
 
-        this.setMagic(MAGIC, UPG_MAGIC);
+        setCostUpgrade(0);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new SkippedBeatsPower(p, magicNumber)));
+        this.addToBot(new ApplyPowerAction(p, p, new SymphoniumPower(p)));
     }
 
     @Override
     public AbstractCard makeCopy() { // Optional
-        return new SkippedBeats();
+        return new Symphonium();
     }
 }

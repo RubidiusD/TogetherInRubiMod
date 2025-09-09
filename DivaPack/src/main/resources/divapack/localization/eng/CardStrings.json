@@ -11,7 +11,8 @@
   },
   "DivaPack:Reprise": {
     "NAME": "Reprise",
-    "DESCRIPTION": "Set ALL Allies' dumbjokedivamod:Rhythm to 0 next turn."
+    "DESCRIPTION": "Set ALL Allies' dumbjokedivamod:Rhythm to 0 next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Set ALL Allies' dumbjokedivamod:Rhythm to 0 next turn."
   },
   "DivaPack:Counterpoint": {
     "NAME": "Counterpoint",
@@ -39,5 +40,18 @@
   "DivaPack:Nightcore": {
     "NAME": "Nightcore",
     "DESCRIPTION": "Apply !M! dumbjokedivamod:Captivation to ALL enemies and !DivaPack:Tax! dumbjokedivamod:Captivation to ALL allies and yourself."
+  },
+  "DivaPack:Leek": {
+    "NAME": "Leek",
+    "DESCRIPTION": "Heal ALL Allies by !M! each time you gain dumbjokedivamod:Rhythm this turn."
+  },
+  "DivaPack:CrowdCheer": {
+    "NAME": "Crowd Cheer",
+    "DESCRIPTION": "Each time an Ally gains dumbjokedivamod:Rhythm create a Lyric in hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Each time an Ally gains dumbjokedivamod:Rhythm create a Lyric in hand."
+  },
+  "DivaPack:Symphonium": {
+    "NAME": "Symphonium",
+    "DESCRIPTION": "Benefit from the dumbjokedivamod:Symphony of Allies."
   }
 }

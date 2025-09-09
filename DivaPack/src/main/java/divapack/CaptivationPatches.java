@@ -3,7 +3,6 @@ package divapack;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch2;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import dumbjokedivamod.powers.CaptivationPower;
 import dumbjokedivamod.powers.RhythmPower;
 import spireTogether.network.P2P.P2PManager;
@@ -26,12 +25,6 @@ public class CaptivationPatches {
             if (data.request.equals(captivationTrigger)) {
                 if (AbstractDungeon.player.hasPower(CaptivationPower.POWER_ID)) {
                     AbstractDungeon.player.getPower(CaptivationPower.POWER_ID).onSpecificTrigger();
-                }
-
-                for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
-                    if (m.hasPower(CaptivationPower.POWER_ID)) {
-                        m.getPower(CaptivationPower.POWER_ID).onSpecificTrigger();
-                    }
                 }
             }
         }

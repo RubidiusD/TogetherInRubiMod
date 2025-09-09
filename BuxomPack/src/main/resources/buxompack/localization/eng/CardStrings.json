@@ -29,7 +29,7 @@
   },
   "BuxomPack:Consolation": {
     "NAME": "Consolation",
-    "DESCRIPTION": "Unplayable. NL buxommod:Bouncy. NL On Exhaust, ALL Allies gain !M! Block and add a copy to your discard pile."
+    "DESCRIPTION": "Unplayable. NL buxommod:Bouncy. NL On Exhaust, ALL Allies gain !B! Block and add a copy to your discard pile."
   },
   "BuxomPack:BlushingStrike": {
     "NAME": "Blushing Strike",
@@ -39,5 +39,10 @@
     "NAME": "Omega Envy",
     "DESCRIPTION": "Deal !D! Damage. Absorb ALL non-Buxom Allies' buxommod:Buxom.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. Absorb ALL non-Buxom Allies' buxommod:Buxom"
+  },
+  "BuxomPack:TestingTesting": {
+    "NAME": "The Card Applies Everything",
+    "DESCRIPTION": "Innate. NL Retain. NL Apply !M! million Stuff. Upgrade permanently. Can be upgraded any number of times.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Apply !M! million Stuff. Draw !BuxomPack:Draw! cards. Upgrade permanently. Can be upgraded any number of times."
   }
 }
