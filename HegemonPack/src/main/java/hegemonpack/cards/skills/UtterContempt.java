@@ -1,12 +1,12 @@
 package hegemonpack.cards.skills;
 
+import HegemonMod.character.Hegemon;
+import HegemonMod.powers.debuff.Sin;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hegemonpack.cards.BaseCard;
-import rubimod.character.Hegemon;
-import rubimod.powers.debuff.Sin;
 import hegemonpack.powers.Sinner;
 
 public class UtterContempt extends BaseCard {
@@ -16,7 +16,7 @@ public class UtterContempt extends BaseCard {
             CardType.SKILL,
             CardRarity.RARE,
             CardTarget.ENEMY,
-            2    // card cost!! (-1 is X, -2 is unplayable)
+            1    // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int MAGIC = 2;
@@ -26,18 +26,13 @@ public class UtterContempt extends BaseCard {
 
         setMagic(MAGIC); // self-explanatory
         setExhaust(true);
-        setCostUpgrade(1);
-        setInnate(true);
+        setInnate(false, true);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new Sin(m, magicNumber)));
         addToBot(new ApplyPowerAction(m, p, new Sinner(m)));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new UtterContempt();
-    }
+    @Override public AbstractCard makeCopy() { return new UtterContempt(); }
 }

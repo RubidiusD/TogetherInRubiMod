@@ -1,10 +1,10 @@
 package hegemonpack.cards.skills;
 
+import HegemonMod.character.Hegemon;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hegemonpack.cards.BaseCard;
-import rubimod.character.Hegemon;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 
@@ -13,7 +13,7 @@ public class Sandwiches extends BaseCard {
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.COMMON,
+            CardRarity.UNCOMMON,
             CardTarget.NONE,
             0    // card cost!! (-1 is X, -2 is unplayable)
     );
@@ -30,15 +30,11 @@ public class Sandwiches extends BaseCard {
         tags.add(CardTags.HEALING);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         p.heal(this.magicNumber);
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(false, true))
             e.heal(this.magicNumber);
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Sandwiches();
-    }
+    @Override public AbstractCard makeCopy() { return new Sandwiches(); }
 }

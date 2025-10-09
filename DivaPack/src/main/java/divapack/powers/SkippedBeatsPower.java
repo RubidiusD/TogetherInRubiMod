@@ -20,14 +20,12 @@ public class SkippedBeatsPower extends BasePower {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 
-    @Override
-    public void stackPower(int stackAmount) {
+    @Override public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         updateDescription();
     }
 
-    @Override
-    public void atEndOfTurn(boolean isPlayer) {
+    @Override public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer) {
             int energy = EnergyPanel.getCurrentEnergy() + this.amount;
             ArrayList<P2PPlayer> players = SpireHelp.Multiplayer.Players.GetPlayers(true, true);
@@ -45,8 +43,7 @@ public class SkippedBeatsPower extends BasePower {
         this.description += DESCRIPTIONS[2];
     }
 
-    @Override
-    public AbstractPower makeCopy() {
+    @Override public AbstractPower makeCopy() {
         return new SkippedBeatsPower(owner, this.amount);
     }
 }

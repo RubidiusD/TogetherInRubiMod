@@ -29,16 +29,12 @@ public class GainBearings extends BaseCard {
         setMagic(MAGIC, UPG_MAGIC);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true)) {
             addToBot(new AllyDrawTypeAction(e, CardType.STATUS, magicNumber));
         }
         addToBot(new DrawCardAction(1));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new GainBearings();
-    }
+    @Override public AbstractCard makeCopy() { return new GainBearings(); }
 }

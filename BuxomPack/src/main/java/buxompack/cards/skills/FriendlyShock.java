@@ -31,13 +31,9 @@ public class FriendlyShock extends BaseCard {
         cardsToPreview = new ShockStatus();
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ShockAction(customVar("Scale"), magicNumber));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new FriendlyShock();
-    }
+    @Override public AbstractCard makeCopy() { return new FriendlyShock(); }
 }

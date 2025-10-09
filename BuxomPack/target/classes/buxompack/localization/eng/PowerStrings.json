@@ -10,5 +10,11 @@
     "DESCRIPTIONS": [
       "When an Ally exhausts a card, gain #b", " buxommod:Milk."
     ]
+  },
+  "BuxomPack:VisualisePower": {
+    "NAME": "Visualise",
+    "DESCRIPTIONS": [
+      "When you hit this enemy, exhaust a random status from your hand."
+    ]
   }
 }

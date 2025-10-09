@@ -17,14 +17,12 @@ public class LeekPower extends BasePower implements OnReceivePowerPower {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 
-    @Override
-    public void stackPower(int stackAmount) {
+    @Override public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         updateDescription();
     }
 
-    @Override
-    public boolean onReceivePower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+    @Override public boolean onReceivePower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power.ID.equals(RhythmPower.POWER_ID)) {
             this.flash();
             for (P2PPlayer pe : SpireHelp.Multiplayer.Players.GetPlayers(true, true)) {
@@ -35,8 +33,7 @@ public class LeekPower extends BasePower implements OnReceivePowerPower {
         return true;
     }
 
-    @Override
-    public void atStartOfTurn() {
+    @Override public void atStartOfTurn() {
         addToTop(new RemoveSpecificPowerAction(owner, owner, this));
     }
 
@@ -44,8 +41,7 @@ public class LeekPower extends BasePower implements OnReceivePowerPower {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
-    @Override
-    public AbstractPower makeCopy() {
+    @Override public AbstractPower makeCopy() {
         return new LeekPower(owner, amount);
     }
 }

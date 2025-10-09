@@ -1,14 +1,13 @@
 package hegemonpack.cards.powers;
 
+import HegemonMod.character.Hegemon;
+import HegemonMod.powers.buff.PhoenixPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.utility.ShowCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BrutalityPower;
-import rubimod.character.Hegemon;
-import rubimod.powers.buff.PhoenixPower;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 import hegemonpack.cards.BaseCard;
@@ -36,8 +35,7 @@ public class KindofHisThing extends BaseCard {
         cardsToPreview = new KindofYourThing();
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
         {
             e.addPower(new PhoenixPower(p, customVar("Phoenix")));
@@ -50,8 +48,5 @@ public class KindofHisThing extends BaseCard {
         addToBot(new MakeTempCardInHandAction(cardsToPreview.makeCopy()));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new KindofHisThing();
-    }
+    @Override public AbstractCard makeCopy() { return new KindofHisThing(); }
 }

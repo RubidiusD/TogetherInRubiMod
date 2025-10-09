@@ -31,19 +31,16 @@ public class Consolation extends BaseCard {
         tags.add(CustomTags.BOUNCY);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {}
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {}
 
-    @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+    @Override public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         this.type = CardType.STATUS;
         boolean result = super.canUse(p, m);
         this.type = info.cardType;
         return result;
     }
 
-    @Override
-    public void triggerOnExhaust() {
+    @Override public void triggerOnExhaust() {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true)) {
             e.addBlock(this.block);
         }
@@ -51,8 +48,5 @@ public class Consolation extends BaseCard {
         addToBot(new MakeTempCardInDiscardAction(this, 1));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Consolation();
-    }
+    @Override public AbstractCard makeCopy() { return new Consolation(); }
 }

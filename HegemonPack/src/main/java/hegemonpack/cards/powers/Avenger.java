@@ -1,11 +1,11 @@
 package hegemonpack.cards.powers;
 
+import HegemonMod.cards.attacks.Punish;
+import HegemonMod.character.Hegemon;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.cards.skills.Punish;
-import rubimod.character.Hegemon;
 import hegemonpack.cards.BaseCard;
 import hegemonpack.powers.AvengerPower;
 
@@ -16,7 +16,7 @@ public class Avenger extends BaseCard {
             CardType.POWER,
             CardRarity.RARE,
             CardTarget.SELF,
-            1    // card cost!! (-1 is X, -2 is unplayable)
+            2    // card cost!! (-1 is X, -2 is unplayable)
     );
 
     private static final int MAGIC = 1;
@@ -31,13 +31,9 @@ public class Avenger extends BaseCard {
         cardsToPreview = new Punish();
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new AvengerPower(p, 1)));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Avenger();
-    }
+    @Override public AbstractCard makeCopy() { return new Avenger(); }
 }

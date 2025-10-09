@@ -18,7 +18,7 @@ public class Homophony extends BaseCard {
             CardType.SKILL,
             CardRarity.RARE,
             CardTarget.SELF,
-            1    // card cost!! (-1 is X, -2 is unplayable)
+            2    // card cost!! (-1 is X, -2 is unplayable)
     );
 
     public static final int MAGIC = 1;
@@ -31,25 +31,19 @@ public class Homophony extends BaseCard {
         setExhaust(true);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
             e.addPower(new DuplicationPower(p, magicNumber));
         this.addToBot(new PressEndTurnButtonAction());
     }
 
-    @Override
-    public void triggerOnGlowCheck() {
+    @Override public void triggerOnGlowCheck() {
         this.glowColor = AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty() ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
     }
 
-    @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+    @Override public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         return AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty();
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Homophony();
-    }
+    @Override public AbstractCard makeCopy() { return new Homophony(); }
 }

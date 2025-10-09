@@ -1,19 +1,15 @@
 package hegemonpack;
 
+import HegemonMod.character.Hegemon;
+import HegemonMod.relics.PaperUmbrella;
+import HegemonMod.relics.ReaperToken;
 import basemod.AutoAdd;
 import basemod.BaseMod;
-import basemod.helpers.CardBorderGlowManager;
 import basemod.interfaces.*;
-import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireSideload;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.powers.ArtifactPower;
-import com.megacrit.cardcrawl.relics.Ginger;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import spireTogether.network.P2P.P2PPlayer;
-import spireTogether.util.SpireHelp;
 import hegemonpack.cards.BaseCard;
-import hegemonpack.cards.attacks.Moralise;
 import hegemonpack.relics.BaseRelic;
 import hegemonpack.util.GeneralUtils;
 import hegemonpack.util.KeywordInfo;
@@ -54,7 +50,7 @@ public class HegemonPack implements
 
     //This will be called by ModTheSpire because of the @SpireInitializer annotation at the top of the class.
     public static void initialize() {
-        if (Loader.isModLoaded("rubimod")) {
+        if (Loader.isModLoaded("HegemonMod")) {
             new HegemonPack();
         }
     }
@@ -64,8 +60,7 @@ public class HegemonPack implements
         logger.info(modID + " subscribed to BaseMod.");
     }
 
-    @Override
-    public void receivePostInitialize() {
+    @Override public void receivePostInitialize() {
         Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
     }
@@ -81,8 +76,7 @@ public class HegemonPack implements
 
     public static final Map<String, KeywordInfo> keywords = new HashMap<>();
 
-    @Override
-    public void receiveEditStrings() {
+    @Override public void receiveEditStrings() {
         /*
             First, load the default localization.
             Then, if the current language is different, attempt to load localization for that language.
@@ -117,8 +111,7 @@ public class HegemonPack implements
                 localizationPath(lang, "UIStrings.json"));
     }
 
-    @Override
-    public void receiveEditKeywords()
+    @Override public void receiveEditKeywords()
     {
         Gson gson = new Gson();
         String json = Gdx.files.internal(localizationPath(defaultLanguage, "Keywords.json")).readString(String.valueOf(StandardCharsets.UTF_8));
@@ -217,8 +210,7 @@ public class HegemonPack implements
         }
     }
 
-    @Override
-    public void receiveEditCards() { // adds any cards to the game
+    @Override public void receiveEditCards() { // adds any cards to the game
         new AutoAdd(modID) // Loads files
                 .packageFilter(BaseCard.class) // in the same package as this class
                 .any(BaseCard.class, (info, card) -> {
@@ -226,42 +218,9 @@ public class HegemonPack implements
                     if (info.seen || card.rarity == AbstractCard.CardRarity.BASIC)
                         UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
                 });
-
-        // Card Glow Hopefully?
-        CardBorderGlowManager.addGlowInfo(new CardBorderGlowManager.GlowInfo() {
-            @Override
-            public boolean test(AbstractCard card) {
-                //return true if "card" follows this rule, else return false
-
-                if (!card.cardID.equals(Moralise.ID))
-                    return false;
-                for (P2PPlayer p : SpireHelp.Multiplayer.Players.GetPlayers(true, true)) {
-                    if (!p.hasPower(ArtifactPower.POWER_ID) && !p.hasRelic(Ginger.ID))
-                        return false;
-                }
-
-                return true;
-            }
-
-            @Override
-            public Color getColor(AbstractCard card) {
-                //return an instance of Color to be used as the color. e.g. Color.WHITE.cpy().
-
-                return Color.YELLOW.cpy();
-            }
-
-            @Override
-            public String glowID() {
-                //return a string to be used as a unique ID for this glow.
-                //It's recommended to follow the usual modding convention of "modname:name"
-
-                return ("HegemonPack:" + "Glow");
-            }
-        });
     }
 
-    @Override
-    public void receiveEditRelics() { // adds any relics to the game
+    @Override public void receiveEditRelics() { // adds any relics to the game
         new AutoAdd(modID) // Loads files
                 .packageFilter(BaseRelic.class) // in the same package as this class
                 .any(BaseRelic.class, (info, relic) -> { // run this code for children
@@ -274,5 +233,8 @@ public class HegemonPack implements
                     if (info.seen)
                         UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
+        // unload globalised relics
+        BaseMod.removeRelicFromCustomPool(BaseMod.getCustomRelic(ReaperToken.ID), Hegemon.Meta.CARD_COLOR);
+        BaseMod.removeRelicFromCustomPool(BaseMod.getCustomRelic(PaperUmbrella.ID), Hegemon.Meta.CARD_COLOR);
     }
 }

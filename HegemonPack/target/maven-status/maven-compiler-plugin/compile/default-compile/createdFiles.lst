@@ -1,6 +1,5 @@
 hegemonpack\actions\MoraliseAction.class
 hegemonpack\cards\powers\Avenger.class
-hegemonpack\cards\powers\HegemonyAura.class
 hegemonpack\util\TextureLoader.class
 hegemonpack\util\TextureLoader$1.class
 hegemonpack\cards\attacks\MouthEssence.class
@@ -8,13 +7,11 @@ hegemonpack\HegemonPack.class
 hegemonpack\cards\skills\Plague.class
 hegemonpack\cards\attacks\Moralise.class
 hegemonpack\cards\skills\UtterContempt.class
-hegemonpack\cards\attacks\MouthEssence$TauntPatch.class
 hegemonpack\cards\BaseCard.class
 hegemonpack\relics\BaseRelic.class
 hegemonpack\powers\BasePower.class
 hegemonpack\cards\BaseCard$CardStats.class
 hegemonpack\cards\skills\Sandwiches.class
-hegemonpack\HegemonPack$1.class
 hegemonpack\cards\BaseCard$VariableType.class
 hegemonpack\cards\skills\SpiritCoins.class
 hegemonpack\cards\attacks\SympathyStrike.class
@@ -30,13 +27,14 @@ hegemonpack\potions\BasePotion.class
 hegemonpack\actions\RunSchoolAction.class
 hegemonpack\util\KeywordInfo.class
 hegemonpack\cards\KindofYourThing.class
-hegemonpack\cards\attacks\MouthEssence$TauntPlayerPatch.class
 hegemonpack\cards\skills\ParentsRunaSchool.class
 hegemonpack\cards\BaseCard$LocalVarInfo.class
 hegemonpack\AllyArtifactLostSubscriber.class
 hegemonpack\cards\powers\Immunisation.class
 hegemonpack\cards\skills\UmbralArmament.class
+hegemonpack\relics\PaperUmbrella.class
 hegemonpack\util\GeneralUtils.class
 hegemonpack\cards\powers\KindofHisThing.class
 hegemonpack\cards\attacks\Untether.class
 hegemonpack\powers\Sinner$PoisonSinnerPatch.class
+hegemonpack\relics\PhasedMysteriousStranger.class

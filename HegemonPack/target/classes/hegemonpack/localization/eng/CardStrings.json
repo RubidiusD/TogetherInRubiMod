@@ -9,28 +9,49 @@
       "Blizzard is a good example for this."
     ]
   },
-  "HegemonPack:SympathyStrike": {
-    "NAME": "Sympathy Strike",
-    "DESCRIPTION": "Deal !D! damage. If played by a class other than a Hegemon, deal !M! rubimod:Necrotic damage on hit."
-  },
+
+
   "HegemonPack:MouthEssence": {
     "NAME": "Mouth Essence",
-    "DESCRIPTION": "Apply !M! tisCardPack:Taunt. Deal !D! damage."
+    "DESCRIPTION": "Apply !M! tisCardPack:Taunt. Deal !D! damage. NL Exhaust."
   },
-  "HegemonPack:Sandwiches": {
-    "NAME": "Sandwiches",
-    "DESCRIPTION": "Heal ALL players by !M!. NL Exhaust."
+  "HegemonPack:SympathyStrike": {
+    "NAME": "Sympathy Strike",
+    "DESCRIPTION": "Deal !D! damage. If played by a class other than a Hegemon, gain !M! HegemonMod:Toxicity."
   },
-  "HegemonPack:SpiritCoins": {
-    "NAME": "Spirit Coins",
-    "DESCRIPTION": "Give ALL allies !B!x3 Block, rubimod:Bleeding, and !HegemonPack:Leech! rubimod:Leech_Toxin.",
-    "UPGRADED_DESCRIPTION": "Retain. NL Give ALL allies !B!x3 Block, rubimod:Bleeding, and !HegemonPack:Leech! rubimod:Leech_Toxin."
+
+  "HegemonPack:Moralise": {
+    "NAME": "Moralise",
+    "DESCRIPTION": "Deal !D! damage and apply Weak to ALL. NL For each that resists it, give them 2 strength and you 1."
   },
-  "HegemonPack:UmbralArmament": {
-    "NAME": "Umbral Armaments",
-    "DESCRIPTION": "ALL allies apply !M! rubimod:LeechToxin on hit this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "ALL allies apply !M! rubimod:LeechToxin on hit this turn."
+
+  "HegemonPack:Untether": {
+    "NAME": "Untether",
+    "DESCRIPTION": "Deal target ally !D! damage, increase their base draw by 1 and apply 3 tisCardPack:Insanity"
   },
+
+
+  "HegemonPack:Immunisation": {
+    "NAME": "Immunisation",
+    "DESCRIPTION": "All players gain !M! Artifact."
+  },
+
+  "HegemonPack:Avenger": {
+    "NAME": "Avenger",
+    "DESCRIPTION": "Ethereal. NL Whenever an ally consumes Artifact, create a *Punish.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever an ally consumes Artifact, create a *Punish."
+  },
+  "HegemonPack:KindofHisThing": {
+    "NAME": "Kind of His Thing",
+    "DESCRIPTION": "ALL players gain buffs over time. NL It's kind of your \"Thing\".",
+    "UPGRADE_DESCRIPTION": "ALL players gain buffs and lose !M! hp to draw !M! each turn. NL It's kind of your \"Thing\"."
+  },
+  "HegemonPack:KindofYourThing": {
+    "NAME": "Kind of Your Thing",
+    "DESCRIPTION": "Retain. NL At the end of your turn, lose !M! health."
+  },
+
+
   "HegemonPack:ParentsRunaSchool": {
     "NAME": "..and Drink!",
     "DESCRIPTION": "Shuffle an *Insight into ALL draw piles."
@@ -38,46 +59,31 @@
   "HegemonPack:WayoftheReaper": {
     "NAME": "Way of the Reaper",
     "DESCRIPTION": "Add a *Punish to ALL allies hands.",
-    "UPGRADED_DESCRIPTION": "Add a *Punish+ to ALL allies hands."
+    "UPGRADED_DESCRIPTION": "Add a *Punish to ALL allies hands and !M! in yours."
   },
+
   "HegemonPack:Plague": {
     "NAME": "Plague",
     "DESCRIPTION": "Add a *Vector to ALL allies draw piles.",
     "UPGRADED_DESCRIPTION": "Add a *Vector+ to ALL allies draw piles."
   },
+  "HegemonPack:Sandwiches": {
+    "NAME": "Sandwiches",
+    "DESCRIPTION": "Heal ALL players by !M!. NL Exhaust."
+  },
+  "HegemonPack:SpiritCoins": {
+    "NAME": "Spirit Coins",
+    "DESCRIPTION": "Give ALL allies !B!x3 Block and !HegemonPack:Leech! HegemonMod:Leech_Toxin.",
+    "UPGRADED_DESCRIPTION": "Retain. NL Give ALL allies !B!x3 Block and !HegemonPack:Leech! HegemonMod:Leech_Toxin."
+  },
+  "HegemonPack:UmbralArmament": {
+    "NAME": "Silver Liquor",
+    "DESCRIPTION": "ALL allies gain weak and !M! HegemonMod:Toxicity. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "ALL allies gain weak and !M! HegemonMod:Toxicity."
+  },
   "HegemonPack:UtterContempt": {
     "NAME": "Utter Contempt",
-    "DESCRIPTION": "Innate. NL Apply !M! rubimod:Sin. NL This enemy's rubimod:Sin applies to their Poison."
-  },
-  "HegemonPack:Immunisation": {
-    "NAME": "Immunisation",
-    "DESCRIPTION": "All players gain !M! Artifact."
-  },
-  "HegemonPack:HegemonyAura": {
-    "NAME": "Hegemony Aura",
-    "DESCRIPTION": "Whenever an ally is attacked, apply !M! rubimod:Sin back.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever an ally is attacked, apply !M! rubimod:Sin back."
-  },
-  "HegemonPack:KindofHisThing": {
-    "NAME": "Kind of His Thing",
-    "DESCRIPTION": "ALL players gain buffs over time. NL It's kind of your \"Thing\".",
-    "UPGRADE_DESCRIPTION": "ALL players gain buffs and lose !M! hp to draw !M! each turn. NL It's kind of your \"Thing\"."
-  },
-  "HegemonPack:Moralise": {
-    "NAME": "Moralise",
-    "DESCRIPTION": "Deal !D! damage and apply Weak to ALL."
-  },
-  "HegemonPack:Avenger": {
-    "NAME": "Avenger",
-    "DESCRIPTION": "Ethereal. NL Whenever an ally consumes Artifact, create a *Punish.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. NL Whenever an ally consumes Artifact, create a *Punish."
-  },
-  "HegemonPack:KindofYourThing": {
-    "NAME": "Kind of Your Thing",
-    "DESCRIPTION": "Retain. NL At the end of your turn, lose !M! health."
-  },
-  "HegemonPack:Untether": {
-    "NAME": "Untether",
-    "DESCRIPTION": "Deal target ally !D! damage, increase their base draw by 1 and apply 3 tisCardPack:Insanity"
+    "DESCRIPTION": "Apply !M! HegemonMod:Sin. NL This enemy's HegemonMod:Sin applies to their Poison.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! HegemonMod:Sin. NL This enemy's HegemonMod:Sin applies to their Poison."
   }
 }

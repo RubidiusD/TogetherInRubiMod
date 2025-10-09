@@ -28,21 +28,16 @@ public class PoPiPo extends BaseCard {
         this.cardsToPreview = new Po();
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
             e.addCard(NetworkCard.Generate(cardsToPreview), CardGroup.CardGroupType.HAND);
         addToBot(new ShowCardAction(cardsToPreview));
     }
 
-    @Override
-    public void upgrade() {
+    @Override public void upgrade() {
         super.upgrade();
         this.cardsToPreview.upgrade();
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new PoPiPo();
-    }
+    @Override public AbstractCard makeCopy() { return new PoPiPo(); }
 }

@@ -11,8 +11,7 @@ import spireTogether.util.SpireHelp;
 public class RunSchoolAction extends AbstractGameAction {
     public RunSchoolAction() { super(); }
 
-    @Override
-    public void update()
+    @Override public void update()
     {
         AbstractCard c = new com.megacrit.cardcrawl.cards.tempCards.Insight();
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))

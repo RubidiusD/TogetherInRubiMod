@@ -33,16 +33,28 @@
   },
   "BuxomPack:BlushingStrike": {
     "NAME": "Blushing Strike",
-    "DESCRIPTION": "Deal !D! Damage. If played by a class other than The Buxom, also gain !M! buxommod:Lactating."
+    "DESCRIPTION": "Deal !D! damage. If played by a class other than The Buxom, also gain !M! buxommod:Lactating."
   },
   "BuxomPack:OmegaEnvy": {
     "NAME": "Omega Envy",
-    "DESCRIPTION": "Deal !D! Damage. Absorb ALL non-Buxom Allies' buxommod:Buxom.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. Absorb ALL non-Buxom Allies' buxommod:Buxom"
+    "DESCRIPTION": "Deal !D! damage. Absorb ALL non-Buxom Allies' buxommod:Buxom.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Absorb ALL non-Buxom Allies' buxommod:Buxom"
   },
-  "BuxomPack:TestingTesting": {
-    "NAME": "The Card Applies Everything",
-    "DESCRIPTION": "Innate. NL Retain. NL Apply !M! million Stuff. Upgrade permanently. Can be upgraded any number of times.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Apply !M! million Stuff. Draw !BuxomPack:Draw! cards. Upgrade permanently. Can be upgraded any number of times."
+  "BuxomPack:LiberalLactation": {
+    "NAME": "Liberal Lactation",
+    "DESCRIPTION": "Deal !D! damage. NL ALL Allies gain !M! milk, and !M! again if BuxomMod:Exposed."
+  },
+  "BuxomPack:ChibiDeployment": {
+    "NAME": "Chibi Deployment",
+    "DESCRIPTION": "buxommod:Embarrassing. NL Lose !M! buxommod:Buxom. Target Ally gains a buxommod:Defensive *Chibi."
+  },
+  "BuxomPack:StimSmash": {
+    "NAME": "Stim Smash",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! BuxomPack:Visualise."
+  },
+  "BuxomPack:LockIn": {
+    "NAME": "Lock In",
+    "DESCRIPTION": "buxommod:Embarrassing. NL BuxomPack:Visualise ALL enemies. Shuffle 2 *Afterswell into your Draw Pile.",
+    "UPGRADE_DESCRIPTION": "buxommod:Embarrassing. NL BuxomPack:Visualise ALL enemies. Shuffle 2 buxommod:Rapidswell into your Draw Pile."
   }
 }

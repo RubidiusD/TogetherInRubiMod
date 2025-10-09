@@ -1,0 +1,11 @@
+{
+  "modid": "DivaPack",
+  "name": "TiS Diva Booster Pack",
+  "author_list": ["Dumb Joke", "Rubidius \"Rubi\" Dext"],
+  "description": "Hatsune in Spire",
+  "version": "1.0.0",
+  "sts_version": "12-18-2022",
+  "mts_version": "3.30.0",
+  "dependencies": ["basemod", "stslib", "dumbjokedivamod", "spireTogether", "tisCardPack"],
+  "update_json": ""
+}

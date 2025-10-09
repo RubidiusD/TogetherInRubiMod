@@ -26,13 +26,9 @@ public class Fawning extends BaseCard {
         setMagic(MAGIC, UPG_MAGIC);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ShockAction(customVar("Scale"), magicNumber));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Fawning();
-    }
+    @Override public AbstractCard makeCopy() { return new Fawning(); }
 }

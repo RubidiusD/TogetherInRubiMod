@@ -24,13 +24,9 @@ public class CrowdCheer extends BaseCard {
         setInnate(false, true);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p, p, new CheerPower(p, 1)));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new CrowdCheer();
-    }
+    @Override public AbstractCard makeCopy() { return new CrowdCheer(); }
 }

@@ -35,8 +35,7 @@ public class OmegaEnvy extends BaseCard {
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true)) {
             if (!e.playerClass.equals(TheBuxom.Enums.THE_BUXOM)) {
@@ -45,8 +44,5 @@ public class OmegaEnvy extends BaseCard {
         }
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new OmegaEnvy();
-    }
+    @Override public AbstractCard makeCopy() { return new OmegaEnvy(); }
 }

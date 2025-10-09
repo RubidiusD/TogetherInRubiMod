@@ -57,8 +57,7 @@ public abstract class BaseRelic extends CustomMultiplayerRelic {
         }
     }
 
-    @Override
-    public void loadLargeImg() {
+    @Override public void loadLargeImg() {
         if (notPng(imageName)) {
             if (largeImg == null) {
                 this.largeImg = ImageMaster.loadImage(relicPath("large/" + imageName + ".png"));

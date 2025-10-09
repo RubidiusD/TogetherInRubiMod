@@ -25,14 +25,10 @@ public class Reprise extends BaseCard {
         setExhaust(true, false);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
             e.addPower(new ReprisePower(p));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Reprise();
-    }
+    @Override public AbstractCard makeCopy() { return new Reprise(); }
 }

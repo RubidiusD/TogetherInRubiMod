@@ -413,8 +413,7 @@ public abstract class BaseCard extends CustomMultiplayerCard {
     }
 
 
-    @Override
-    public AbstractCard makeStatEquivalentCopy() {
+    @Override public AbstractCard makeStatEquivalentCopy() {
         AbstractCard candidate = super.makeStatEquivalentCopy();
 
         if (candidate instanceof BaseCard) {
@@ -461,8 +460,7 @@ public abstract class BaseCard extends CustomMultiplayerCard {
         return candidate;
     }
 
-    @Override
-    public void upgrade()
+    @Override public void upgrade()
     {
         if (!upgraded)
         {
@@ -552,8 +550,7 @@ public abstract class BaseCard extends CustomMultiplayerCard {
     }
 
     boolean inCalc = false;
-    @Override
-    public void applyPowers() {
+    @Override public void applyPowers() {
         if (!inCalc) {
             inCalc = true;
             for (LocalVarInfo var : cardVariables.values()) {
@@ -578,8 +575,7 @@ public abstract class BaseCard extends CustomMultiplayerCard {
         super.applyPowers();
     }
 
-    @Override
-    public void calculateCardDamage(AbstractMonster m) {
+    @Override public void calculateCardDamage(AbstractMonster m) {
         if (!inCalc) {
             inCalc = true;
             for (LocalVarInfo var : cardVariables.values()) {
@@ -603,8 +599,7 @@ public abstract class BaseCard extends CustomMultiplayerCard {
         super.calculateCardDamage(m);
     }
 
-    @Override
-    public void resetAttributes() {
+    @Override public void resetAttributes() {
         super.resetAttributes();
 
         for (LocalVarInfo var : cardVariables.values()) {
@@ -622,13 +617,11 @@ public abstract class BaseCard extends CustomMultiplayerCard {
             this.key = ("BuxomPack:" + key);
         }
 
-        @Override
-        public String key() {
+        @Override public String key() {
             return key;
         }
 
-        @Override
-        public void setIsModified(AbstractCard c, boolean v) {
+        @Override public void setIsModified(AbstractCard c, boolean v) {
             if (c instanceof BaseCard) {
                 LocalVarInfo var = ((BaseCard) c).getCustomVar(localKey);
                 if (var != null)
@@ -636,23 +629,19 @@ public abstract class BaseCard extends CustomMultiplayerCard {
             }
         }
 
-        @Override
-        public boolean isModified(AbstractCard c) {
+        @Override public boolean isModified(AbstractCard c) {
             return c instanceof BaseCard && (current = (BaseCard) c).isCustomVarModified(localKey);
         }
 
-        @Override
-        public int value(AbstractCard c) {
+        @Override public int value(AbstractCard c) {
             return c instanceof BaseCard ? ((BaseCard) c).customVar(localKey) : 0;
         }
 
-        @Override
-        public int baseValue(AbstractCard c) {
+        @Override public int baseValue(AbstractCard c) {
             return c instanceof BaseCard ? ((BaseCard) c).customVarBase(localKey) : 0;
         }
 
-        @Override
-        public boolean upgraded(AbstractCard c) {
+        @Override public boolean upgraded(AbstractCard c) {
             return c instanceof BaseCard && ((BaseCard) c).customVarUpgraded(localKey);
         }
 

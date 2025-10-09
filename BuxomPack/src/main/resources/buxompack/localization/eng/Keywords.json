@@ -19,5 +19,13 @@
       "multiword_keywords"
     ],
     "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+  },
+  {
+    "PROPER_NAME": "Visualise",
+    "NAMES": [
+      "visualise",
+      "visualisation"
+    ],
+    "DESCRIPTION": "Hitting this enemy exhausts a random status card from your hand. Lasts X turns."
   }
 ]

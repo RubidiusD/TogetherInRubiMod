@@ -28,8 +28,7 @@ public class SymphoniumPower extends BasePower {
         super(POWER_ID, TYPE, TURN_BASED, owner, -1);
     }
 
-    @Override
-    public void stackPower(int stackAmount) {
+    @Override public void stackPower(int stackAmount) {
         super.stackPower(-1);
         amount = -1;
     }
@@ -38,8 +37,7 @@ public class SymphoniumPower extends BasePower {
         this.description = DESCRIPTIONS[0];
     }
 
-    @Override
-    public AbstractPower makeCopy() {
+    @Override public AbstractPower makeCopy() {
         return new SymphoniumPower(owner);
     }
 

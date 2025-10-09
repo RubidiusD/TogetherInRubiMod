@@ -27,18 +27,13 @@ public class KindofYourThing extends BaseCard {
         setMagic(MAGIC, UPG_MAGIC);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
 
     }
 
-    @Override
-    public void triggerOnEndOfPlayerTurn() {
+    @Override public void triggerOnEndOfPlayerTurn() {
         addToBot(new DamageAction(AbstractDungeon.player, new DamageInfo(AbstractDungeon.player, magicNumber, DamageInfo.DamageType.HP_LOSS)));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new KindofYourThing();
-    }
+    @Override public AbstractCard makeCopy() { return new KindofYourThing(); }
 }

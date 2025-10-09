@@ -26,13 +26,9 @@ public class Leek extends BaseCard {
         setExhaust(true);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new LeekPower(p, magicNumber)));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Leek();
-    }
+    @Override public AbstractCard makeCopy() { return new Leek(); }
 }

@@ -33,16 +33,12 @@ public class Counterpoint extends BaseCard {
         setMagic(MAGIC, UPG_MAGIC); // self-explanatory
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (!p.chosenClass.equals(Diva.Meta.DIVA)) {
             addToBot(new ApplyPowerAction(m, p, new CaptivationPower(m, magicNumber)));
         }
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Counterpoint();
-    }
+    @Override public AbstractCard makeCopy() { return new Counterpoint(); }
 }

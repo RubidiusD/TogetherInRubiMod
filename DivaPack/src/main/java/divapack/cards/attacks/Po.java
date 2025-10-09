@@ -46,18 +46,14 @@ public class Po extends BaseCard {
         initializeTitle();
     }
 
-
-
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         addToBot(new ApplyRhythmAction());
         addToBot(new DrawCardAction(customVar("Draw")));
         addToBot(new TalkAction(true, this.name, 1.0F, 2.0F));
     }
 
-    @Override
-    protected void upgradeName() {
+    @Override protected void upgradeName() {
         String tmpName = this.name;
         super.upgradeName();
         if (random.nextBoolean())
@@ -67,13 +63,9 @@ public class Po extends BaseCard {
         initializeTitle();
     }
 
-    @Override
-    public boolean canUpgrade() {
+    @Override public boolean canUpgrade() {
         return true;
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Po();
-    }
+    @Override public AbstractCard makeCopy() { return new Po(); }
 }

@@ -3,7 +3,7 @@
   "name": "TiS Buxom Booster Pack",
   "author_list": ["Muku", "Rubidius \"Rubi\" Dext"],
   "description": "Buxom Multiplayer Mod",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
   "dependencies": ["basemod", "stslib", "BuxomMod", "spireTogether", "tisCardPack", "PatchEverything"],

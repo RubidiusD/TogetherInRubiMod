@@ -55,8 +55,7 @@ public class BuxomPack implements
         logger.info(modID + " subscribed to BaseMod.");
     }
 
-    @Override
-    public void receivePostInitialize() {
+    @Override public void receivePostInitialize() {
         Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
     }
@@ -72,8 +71,7 @@ public class BuxomPack implements
 
     public static final Map<String, KeywordInfo> keywords = new HashMap<>();
 
-    @Override
-    public void receiveEditStrings() {
+    @Override public void receiveEditStrings() {
         loadLocalization(defaultLanguage); //no exception catching for default localization; you better have at least one that works.
         if (!defaultLanguage.equals(getLangString())) {
             try {
@@ -102,8 +100,7 @@ public class BuxomPack implements
                 localizationPath(lang, "UIStrings.json"));
     }
 
-    @Override
-    public void receiveEditKeywords()
+    @Override public void receiveEditKeywords()
     {
         Gson gson = new Gson();
         String json = Gdx.files.internal(localizationPath(defaultLanguage, "Keywords.json")).readString(String.valueOf(StandardCharsets.UTF_8));
@@ -202,8 +199,7 @@ public class BuxomPack implements
         }
     }
 
-    @Override
-    public void receiveEditCards() { // adds any cards to the game
+    @Override public void receiveEditCards() { // adds any cards to the game
         new AutoAdd(modID) // Loads files
                 .packageFilter(BaseCard.class) // in the same package as this class
                 .any(BaseCard.class, (info, card) -> {
@@ -213,8 +209,7 @@ public class BuxomPack implements
                 });
     }
 
-    @Override
-    public void receiveEditRelics() { // adds any relics to the game
+    @Override public void receiveEditRelics() { // adds any relics to the game
         new AutoAdd(modID) // Loads files
                 .packageFilter(BaseRelic.class) // in the same package as this class
                 .any(BaseRelic.class, (info, relic) -> { // run this code for children
@@ -226,6 +221,5 @@ public class BuxomPack implements
                     // If the class is annotated with @AutoAdd.Seen, it's marked as seen
                     if (info.seen)
                         UnlockTracker.markRelicAsSeen(relic.relicId);
-                });
-    }
+                }); }
 }

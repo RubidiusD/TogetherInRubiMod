@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.actions.unique.PoisonLoseHpAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import static rubimod.powers.debuff.Sin.calculateSin;
+import static HegemonMod.powers.debuff.Sin.calculateSinInt;
 
 public class Sinner extends BasePower {
     public static final String POWER_ID = ("HegemonPack:" + Sinner.class.getSimpleName());
@@ -17,8 +17,7 @@ public class Sinner extends BasePower {
         super(POWER_ID, TYPE, TURN_BASED, owner, -1);
     }
 
-    @Override
-    public void stackPower(int stackAmount) {
+    @Override public void stackPower(int stackAmount) {
         super.stackPower(-1);
         amount = -1;
     }
@@ -27,8 +26,7 @@ public class Sinner extends BasePower {
         this.description = DESCRIPTIONS[0];
     }
 
-    @Override
-    public AbstractPower makeCopy() {
+    @Override public AbstractPower makeCopy() {
         return new Sinner(owner);
     }
 
@@ -37,7 +35,7 @@ public class Sinner extends BasePower {
         @SpireInsertPatch(rloc=16)
         public static void Insert(PoisonLoseHpAction __instance) {
             if (__instance.target.hasPower(Sinner.POWER_ID))
-                __instance.amount = calculateSin(__instance.target,  __instance.amount);
+                __instance.amount = calculateSinInt(__instance.target,  __instance.amount);
         }
     }
 }

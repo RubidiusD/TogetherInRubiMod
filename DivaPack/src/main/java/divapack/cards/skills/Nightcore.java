@@ -32,16 +32,12 @@ public class Nightcore extends BaseCard {
         setCustomVar("Tax", TAX);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
             e.addPower(new CaptivationPower(null, customVar("Tax")));
         addToBot(new ApplyPowerAction(p, p, new CaptivationPower(p, customVar("Tax"))));
         addToBot(new AllEnemyApplyPowerAction(p, magicNumber, (AbstractMonster monster) -> new CaptivationPower(monster, magicNumber)));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Nightcore();
-    }
+    @Override public AbstractCard makeCopy() { return new Nightcore(); }
 }

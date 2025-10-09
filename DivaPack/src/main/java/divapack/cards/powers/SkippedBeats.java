@@ -27,13 +27,9 @@ public class SkippedBeats extends BaseCard {
         this.setMagic(MAGIC, UPG_MAGIC);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p, p, new SkippedBeatsPower(p, magicNumber)));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new SkippedBeats();
-    }
+    @Override public AbstractCard makeCopy() { return new SkippedBeats(); }
 }

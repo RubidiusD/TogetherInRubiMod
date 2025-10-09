@@ -1,12 +1,13 @@
 package hegemonpack.cards.skills;
 
+import HegemonMod.cards.attacks.Punish;
+import HegemonMod.character.Hegemon;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.ShowCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import rubimod.cards.skills.Punish;
-import rubimod.character.Hegemon;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.network.objects.items.NetworkCard;
 import spireTogether.util.SpireHelp;
@@ -25,25 +26,26 @@ public class WayoftheReaper extends BaseCard {
     public WayoftheReaper() {
         super(ID, info); // calls the parent constructor
 
+        setMagic(0, 2);
+
         cardsToPreview = new Punish();
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
             e.addCard(NetworkCard.Generate(cardsToPreview), CardGroup.CardGroupType.HAND);
-        addToBot(new ShowCardAction(cardsToPreview));
+        if (magicNumber != 0) {
+            addToBot(new MakeTempCardInHandAction(cardsToPreview, 2));
+        } else {
+            addToBot(new ShowCardAction(cardsToPreview));
+        }
     }
 
-    @Override
-    public void upgrade() {
+    @Override public void upgrade() {
         super.upgrade();
 
         cardsToPreview.upgrade();
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new WayoftheReaper();
-    }
+    @Override public AbstractCard makeCopy() { return new WayoftheReaper(); }
 }

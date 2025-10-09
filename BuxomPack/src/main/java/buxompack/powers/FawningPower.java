@@ -20,8 +20,7 @@ public class FawningPower extends BasePower {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 
-    @Override
-    public void stackPower(int stackAmount) {
+    @Override public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         this.updateDescription();
     }
@@ -37,14 +36,10 @@ public class FawningPower extends BasePower {
         }
     }
 
-    @Override
-    public void onFFExhausted(P2PPlayer source, NetworkCardActionData data) {
+    @Override public void onFFExhausted(P2PPlayer source, NetworkCardActionData data) {
         if (source.IsPlayerInSameRoom())
             System.out.println("Milking through Method 1!! 1111111111111111111111111111111111111111");
     }
 
-    @Override
-    public AbstractPower makeCopy() {
-        return new FawningPower(owner, amount);
-    }
+    @Override public AbstractPower makeCopy() { return new FawningPower(owner, amount); }
 }

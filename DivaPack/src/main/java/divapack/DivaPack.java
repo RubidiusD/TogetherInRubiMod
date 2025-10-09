@@ -58,8 +58,7 @@ public class DivaPack implements
         logger.info(modID + " subscribed to BaseMod.");
     }
 
-    @Override
-    public void receivePostInitialize() {
+    @Override public void receivePostInitialize() {
         Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
     }
@@ -75,8 +74,7 @@ public class DivaPack implements
 
     public static final Map<String, KeywordInfo> keywords = new HashMap<>();
 
-    @Override
-    public void receiveEditStrings() {
+    @Override public void receiveEditStrings() {
         /*
             First, load the default localization.
             Then, if the current language is different, attempt to load localization for that language.
@@ -111,8 +109,7 @@ public class DivaPack implements
                 localizationPath(lang, "UIStrings.json"));
     }
 
-    @Override
-    public void receiveEditKeywords()
+    @Override public void receiveEditKeywords()
     {
         Gson gson = new Gson();
         String json = Gdx.files.internal(localizationPath(defaultLanguage, "Keywords.json")).readString(String.valueOf(StandardCharsets.UTF_8));
@@ -211,30 +208,24 @@ public class DivaPack implements
         }
     }
 
-    @Override
-    public void receiveEditCards() { // adds any cards to the game
-        new AutoAdd(modID) // Loads files
-                .packageFilter(BaseCard.class) // in the same package as this class
-                .any(BaseCard.class, (info, card) -> {
-                    BaseMod.addCard(card);
-                    if (info.seen || card.rarity == AbstractCard.CardRarity.BASIC)
-                        UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
-                });
+    @Override public void receiveEditCards() { // adds any cards to the game
+        new AutoAdd(modID).packageFilter(BaseCard.class).any(BaseCard.class, (info, card) -> {
+            BaseMod.addCard(card);
+            if (info.seen || card.rarity == AbstractCard.CardRarity.BASIC)
+                UnlockTracker.markCardAsSeen(card.cardID); // marks as discovered if seen before or a starter
+        });
     }
 
-    @Override
-    public void receiveEditRelics() { // adds any relics to the game
-        new AutoAdd(modID) // Loads files
-                .packageFilter(BaseRelic.class) // in the same package as this class
-                .any(BaseRelic.class, (info, relic) -> { // run this code for children
-                    if (relic.pool != null)
-                        BaseMod.addRelicToCustomPool(relic, relic.pool); //Register a custom character specific relic
-                    else
-                        BaseMod.addRelic(relic, relic.relicType); //Register a shared or base game character specific relic
+    @Override public void receiveEditRelics() { // adds any relics to the game
+        new AutoAdd(modID).packageFilter(BaseRelic.class).any(BaseRelic.class, (info, relic) -> { // run this code for children
+            if (relic.pool != null)
+                BaseMod.addRelicToCustomPool(relic, relic.pool); //Register a custom character specific relic
+            else
+                BaseMod.addRelic(relic, relic.relicType); //Register a shared or base game character specific relic
 
-                    // If the class is annotated with @AutoAdd.Seen, it's marked as seen
-                    if (info.seen)
-                        UnlockTracker.markRelicAsSeen(relic.relicId);
-                });
+            // If the class is annotated with @AutoAdd.Seen, it's marked as seen
+            if (info.seen)
+                UnlockTracker.markRelicAsSeen(relic.relicId);
+        });
     }
 }

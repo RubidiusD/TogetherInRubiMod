@@ -16,6 +16,5 @@ public class GeneralUtils {
     }
 
     public static String removePrefix(String ID) {
-        return ID.substring(ID.indexOf(":") + 1);
-    }
+        return ID.substring(ID.indexOf(":") + 1); }
 }

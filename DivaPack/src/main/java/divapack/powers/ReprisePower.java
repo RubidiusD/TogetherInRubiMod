@@ -15,14 +15,12 @@ public class ReprisePower extends BasePower {
         super(POWER_ID, TYPE, TURN_BASED, owner, -1);
     }
 
-    @Override
-    public void stackPower(int stackAmount) {
+    @Override public void stackPower(int stackAmount) {
         super.stackPower(-1);
         this.amount = -1;
     }
 
-    @Override
-    public void atStartOfTurn() {
+    @Override public void atStartOfTurn() {
         addToTop(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
         addToTop(new ApplyRhythmAction());
         if (owner.hasPower(RhythmPower.POWER_ID)) {
@@ -35,8 +33,7 @@ public class ReprisePower extends BasePower {
         this.description = DESCRIPTIONS[0];
     }
 
-    @Override
-    public AbstractPower makeCopy() {
+    @Override public AbstractPower makeCopy() {
         return new ReprisePower(owner);
     }
 

@@ -16,15 +16,13 @@ public class CheerPower extends BasePower implements OnReceivePowerPower {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 
-    @Override
-    public void stackPower(int stackAmount) {
+    @Override public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         amount2 += stackAmount;
         updateDescription();
     }
 
-    @Override
-    public boolean onReceivePower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+    @Override public boolean onReceivePower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power.ID.equals(RhythmPower.POWER_ID)) {
             if (amount2 != 0) {
                 addToTop(new MakeTempCardInHandAction(new Lyric()));
@@ -36,8 +34,7 @@ public class CheerPower extends BasePower implements OnReceivePowerPower {
         return true;
     }
 
-    @Override
-    public void atStartOfTurn() {
+    @Override public void atStartOfTurn() {
         this.amount2 = amount;
         updateDescription();
     }
@@ -46,8 +43,7 @@ public class CheerPower extends BasePower implements OnReceivePowerPower {
         this.description = DESCRIPTIONS[0] + amount2 + DESCRIPTIONS[1];
     }
 
-    @Override
-    public AbstractPower makeCopy() {
+    @Override public AbstractPower makeCopy() {
         return new CheerPower(owner, amount);
     }
 }

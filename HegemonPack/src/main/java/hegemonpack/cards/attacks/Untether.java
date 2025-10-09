@@ -1,11 +1,11 @@
 package hegemonpack.cards.attacks;
 
+import HegemonMod.character.Hegemon;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawPower;
-import rubimod.character.Hegemon;
 import spireTogether.monsters.CharacterEntity;
 import tisCardPack.powers.InsanityPower;
 import hegemonpack.cards.BaseCard;
@@ -30,8 +30,7 @@ public class Untether extends BaseCard {
         setExhaust(true, false);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         if (m instanceof CharacterEntity) {
             CharacterEntity ce = (CharacterEntity) m;
             ce.addPower(new DrawPower(ce, 1));
@@ -40,8 +39,5 @@ public class Untether extends BaseCard {
         }
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Untether();
-    }
+    @Override public AbstractCard makeCopy() { return new Untether(); }
 }

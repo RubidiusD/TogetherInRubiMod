@@ -35,16 +35,12 @@ public class BlushingStrike extends BaseCard {
         tags.add(CardTags.STRIKE);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if (!p.chosenClass.equals(TheBuxom.Enums.THE_BUXOM)) {
             addToBot(new ApplyPowerAction(p, p, new LactatingPower(p, p, magicNumber)));
         }
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new BlushingStrike();
-    }
+    @Override public AbstractCard makeCopy() { return new BlushingStrike(); }
 }

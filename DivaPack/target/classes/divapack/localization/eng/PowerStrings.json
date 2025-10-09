@@ -1,0 +1,28 @@
+{
+  "DivaPack:PowerID": {
+    "NAME": "Ultimate Power",
+    "DESCRIPTIONS": [
+      "You are Very Cool and Strong."
+    ]
+  },
+  "DivaPack:ReprisePower": {
+    "NAME": "Reprise",
+    "DESCRIPTIONS": ["Sets Rhythm to 0 at the start of your turn."]
+  },
+  "DivaPack:SkippedBeatsPower": {
+    "NAME": "Skipped Beats",
+    "DESCRIPTIONS": ["Card draw is distributed among Allies equal to excess energy", " + #b", " each turn."]
+  },
+  "DivaPack:LeekPower": {
+    "NAME": "Leek",
+    "DESCRIPTIONS": ["Heal ALL Allies by #b", " whenever you gain Rhythm."]
+  },
+  "DivaPack:CheerPower": {
+    "NAME": "Cheer",
+    "DESCRIPTIONS": ["The next #b", " times an ally gains Rhythm, create a Lyric in hand."]
+  },
+  "DivaPack:SymphoniumPower": {
+    "NAME": "Symphonium",
+    "DESCRIPTIONS": ["Benefit from the Symphony of Allies."]
+  }
+}

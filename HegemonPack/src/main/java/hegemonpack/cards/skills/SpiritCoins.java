@@ -1,12 +1,11 @@
 package hegemonpack.cards.skills;
 
+import HegemonMod.character.Hegemon;
+import HegemonMod.powers.debuff.LeechToxin;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import hegemonpack.cards.BaseCard;
-import rubimod.character.Hegemon;
-import rubimod.powers.debuff.Bleeding;
-import rubimod.powers.debuff.LeechToxin;
 import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 
@@ -33,20 +32,15 @@ public class SpiritCoins extends BaseCard {
         setCustomVar("Leech", 2);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         for (P2PPlayer e : SpireHelp.Multiplayer.Players.GetPlayers(true, true))
         {
             for (int i = 0; i < magicNumber; i++) {
                 e.addBlock(this.block);
             }
-            e.addPower(new Bleeding(p));
             e.addPower(new LeechToxin(p, p, customVar("Leech")));
         }
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new SpiritCoins();
-    }
+    @Override public AbstractCard makeCopy() { return new SpiritCoins(); }
 }

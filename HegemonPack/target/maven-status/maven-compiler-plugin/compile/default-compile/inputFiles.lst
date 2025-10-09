@@ -8,7 +8,6 @@ C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hege
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\BaseCard.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\KindofYourThing.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\powers\Avenger.java
-C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\powers\HegemonyAura.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\powers\Immunisation.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\powers\KindofHisThing.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\skills\ParentsRunaSchool.java
@@ -24,6 +23,8 @@ C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hege
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\powers\BasePower.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\powers\Sinner.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\relics\BaseRelic.java
+C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\relics\PaperUmbrella.java
+C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\relics\PhasedMysteriousStranger.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\util\GeneralUtils.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\util\KeywordInfo.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\util\TextureLoader.java

@@ -1,10 +1,10 @@
 package hegemonpack.powers;
 
+import HegemonMod.cards.attacks.Punish;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import hegemonpack.AllyArtifactLostSubscriber;
-import rubimod.cards.skills.Punish;
 
 public class AvengerPower extends BasePower implements AllyArtifactLostSubscriber {
     public static final String POWER_ID = ("HegemonPack:" + AvengerPower.class.getSimpleName());
@@ -15,14 +15,12 @@ public class AvengerPower extends BasePower implements AllyArtifactLostSubscribe
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 
-    @Override
-    public void stackPower(int stackAmount) {
+    @Override public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         this.updateDescription();
     }
 
-    @Override
-    public void receiveAllyArtifactLost() {
+    @Override public void receiveAllyArtifactLost() {
         addToTop(new MakeTempCardInHandAction(new Punish(), amount));
     }
 
@@ -34,8 +32,7 @@ public class AvengerPower extends BasePower implements AllyArtifactLostSubscribe
             this.description += amount + DESCRIPTIONS[2];
     }
 
-    @Override
-    public AbstractPower makeCopy() {
+    @Override public AbstractPower makeCopy() {
         return new AvengerPower(owner, amount);
     }
 }

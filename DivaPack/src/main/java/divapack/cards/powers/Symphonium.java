@@ -24,13 +24,9 @@ public class Symphonium extends BaseCard {
         setCostUpgrade(0);
     }
 
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    @Override public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p, p, new SymphoniumPower(p)));
     }
 
-    @Override
-    public AbstractCard makeCopy() { // Optional
-        return new Symphonium();
-    }
+    @Override public AbstractCard makeCopy() { return new Symphonium(); }
 }
