@@ -25,7 +25,7 @@ public class ChibiDeployment extends BaseCard {
     );
 
     private static final int MAGIC = 3;
-    private static final int UPG_MAGIC = 1;
+    private static final int UPG_MAGIC = -2;
 
     public ChibiDeployment() {
         super(ID, info); // calls the parent constructor

@@ -4,7 +4,6 @@ import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Texture;
-import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.evacipated.cardcrawl.modthespire.lib.SpireSideload;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -28,6 +27,7 @@ import divapack.util.TextureLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
+import spireTogether.SpireTogetherMod;
 
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -61,6 +61,7 @@ public class DivaPack implements
     @Override public void receivePostInitialize() {
         Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
+        SpireTogetherMod.subscribe(new MessageReceiver());
     }
 
     /*----------Localization----------*/

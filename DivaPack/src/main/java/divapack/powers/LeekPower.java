@@ -41,7 +41,5 @@ public class LeekPower extends BasePower implements OnReceivePowerPower {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
-    @Override public AbstractPower makeCopy() {
-        return new LeekPower(owner, amount);
-    }
+    @Override public AbstractPower makeCopy() { return new LeekPower(owner, amount); }
 }

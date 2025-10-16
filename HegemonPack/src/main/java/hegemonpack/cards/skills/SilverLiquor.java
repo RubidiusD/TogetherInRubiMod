@@ -9,8 +9,8 @@ import spireTogether.network.P2P.P2PPlayer;
 import spireTogether.util.SpireHelp;
 import hegemonpack.cards.BaseCard;
 
-public class UmbralArmament extends BaseCard {
-    public static final String ID = ("HegemonPack:" + UmbralArmament.class.getSimpleName());
+public class SilverLiquor extends BaseCard {
+    public static final String ID = ("HegemonPack:" + SilverLiquor.class.getSimpleName());
     private static final CardStats info = new CardStats(
             Hegemon.Meta.CARD_COLOR,
             CardType.SKILL,
@@ -21,7 +21,7 @@ public class UmbralArmament extends BaseCard {
 
     private static final int MAGIC = 3;
 
-    public UmbralArmament() {
+    public SilverLiquor() {
         super(ID, info); // calls the parent constructor
 
         setMagic(MAGIC); // self-explanatory
@@ -33,5 +33,5 @@ public class UmbralArmament extends BaseCard {
             e.addPower(new ToxicPower(p, magicNumber));
     }
 
-    @Override public AbstractCard makeCopy() { return new UmbralArmament(); }
+    @Override public AbstractCard makeCopy() { return new SilverLiquor(); }
 }

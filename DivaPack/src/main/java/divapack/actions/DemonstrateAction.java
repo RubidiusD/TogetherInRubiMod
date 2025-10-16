@@ -38,5 +38,6 @@ public class DemonstrateAction extends AbstractGameAction {
             }
         }
 
-        this.tickDuration(); }
+        this.tickDuration();
+    }
 }

@@ -1,8 +1,9 @@
 package buxompack.cards.powers;
 
 import BuxomMod.characters.TheBuxom;
-import buxompack.actions.ShockAction;
 import buxompack.cards.BaseCard;
+import buxompack.powers.FawningPower;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -27,7 +28,7 @@ public class Fawning extends BaseCard {
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ShockAction(customVar("Scale"), magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new FawningPower(p, 1)));
     }
 
     @Override public AbstractCard makeCopy() { return new Fawning(); }

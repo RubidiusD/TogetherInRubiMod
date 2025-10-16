@@ -1,5 +1,6 @@
 package divapack.powers;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
@@ -10,6 +11,7 @@ import spireTogether.util.SpireHelp;
 import java.util.ArrayList;
 
 import static com.badlogic.gdx.math.MathUtils.random;
+import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
 public class SkippedBeatsPower extends BasePower {
     public static final String POWER_ID = ("DivaPack:" + SkippedBeatsPower.class.getSimpleName());
@@ -29,9 +31,13 @@ public class SkippedBeatsPower extends BasePower {
         if (isPlayer) {
             int energy = EnergyPanel.getCurrentEnergy() + this.amount;
             ArrayList<P2PPlayer> players = SpireHelp.Multiplayer.Players.GetPlayers(true, true);
-            while (energy != 0) {
-                players.get(random.nextInt(players.size())).addPower(new DrawCardNextTurnPower(null, 1));
-                energy --;
+            if (players.isEmpty()) {
+                addToTop(new ApplyPowerAction(player, player, new DrawCardNextTurnPower(player, energy)));
+            } else {
+                while (energy != 0) {
+                    players.get(random.nextInt(players.size())).addPower(new DrawCardNextTurnPower(null, 1));
+                    energy --;
+                }
             }
         }
     }
@@ -43,7 +49,5 @@ public class SkippedBeatsPower extends BasePower {
         this.description += DESCRIPTIONS[2];
     }
 
-    @Override public AbstractPower makeCopy() {
-        return new SkippedBeatsPower(owner, this.amount);
-    }
+    @Override public AbstractPower makeCopy() { return new SkippedBeatsPower(owner, this.amount); }
 }

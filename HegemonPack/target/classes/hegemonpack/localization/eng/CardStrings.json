@@ -71,15 +71,15 @@
     "NAME": "Sandwiches",
     "DESCRIPTION": "Heal ALL players by !M!. NL Exhaust."
   },
+  "HegemonPack:SilverLiquor": {
+    "NAME": "Silver Liquor",
+    "DESCRIPTION": "ALL allies gain weak and !M! HegemonMod:Toxicity. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "ALL allies gain weak and !M! HegemonMod:Toxicity."
+  },
   "HegemonPack:SpiritCoins": {
     "NAME": "Spirit Coins",
     "DESCRIPTION": "Give ALL allies !B!x3 Block and !HegemonPack:Leech! HegemonMod:Leech_Toxin.",
     "UPGRADED_DESCRIPTION": "Retain. NL Give ALL allies !B!x3 Block and !HegemonPack:Leech! HegemonMod:Leech_Toxin."
-  },
-  "HegemonPack:UmbralArmament": {
-    "NAME": "Silver Liquor",
-    "DESCRIPTION": "ALL allies gain weak and !M! HegemonMod:Toxicity. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "ALL allies gain weak and !M! HegemonMod:Toxicity."
   },
   "HegemonPack:UtterContempt": {
     "NAME": "Utter Contempt",

@@ -10,7 +10,7 @@
     "NAME": "Phased Microphone",
     "FLAVOR": "Is this for recording paranormal sounds?",
     "DESCRIPTIONS": [
-      "[#0000ff]Global.Replaces #bMicrophone. At the end of combat, heal 3 HP."
+      "[#0000ff]Global. Replaces #bMicrophone. When you have #b4 #yRhythm, lose all #yRhythm."
     ]
   }
 }

@@ -26,8 +26,7 @@ public class Sinner extends BasePower {
         this.description = DESCRIPTIONS[0];
     }
 
-    @Override public AbstractPower makeCopy() {
-        return new Sinner(owner);
+    @Override public AbstractPower makeCopy() { return new Sinner(owner);
     }
 
     @SpirePatch2(clz= PoisonLoseHpAction.class, method="update", paramtypez = {})

@@ -7,16 +7,15 @@ buxompack\cards\BaseCard$QuickDynamicVariable.class
 buxompack\cards\BaseCard.class
 buxompack\util\TriFunction.class
 buxompack\util\TextureLoader.class
-buxompack\cards\powers\Motivation$ToplessPowerPatch.class
 buxompack\cards\BaseCard$VariableType.class
 buxompack\cards\skills\Consolation.class
 buxompack\cards\skills\ChibiDeployment.class
 buxompack\cards\BaseCard$CardStats.class
 buxompack\cards\attacks\StimSmash.class
+buxompack\Something.class
 buxompack\cards\skills\FriendlyShock.class
 buxompack\powers\FawningPower.class
 buxompack\util\KeywordInfo.class
-buxompack\cards\powers\Motivation$ToplessPowerPatch$1.class
 buxompack\actions\ShockAction.class
 buxompack\cards\attacks\BlushingStrike.class
 buxompack\cards\powers\Fawning.class

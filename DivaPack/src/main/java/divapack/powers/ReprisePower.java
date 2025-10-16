@@ -33,8 +33,7 @@ public class ReprisePower extends BasePower {
         this.description = DESCRIPTIONS[0];
     }
 
-    @Override public AbstractPower makeCopy() {
-        return new ReprisePower(owner);
+    @Override public AbstractPower makeCopy() { return new ReprisePower(owner);
     }
 
 

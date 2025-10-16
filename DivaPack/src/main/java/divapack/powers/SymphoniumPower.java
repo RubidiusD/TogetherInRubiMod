@@ -37,8 +37,7 @@ public class SymphoniumPower extends BasePower {
         this.description = DESCRIPTIONS[0];
     }
 
-    @Override public AbstractPower makeCopy() {
-        return new SymphoniumPower(owner);
+    @Override public AbstractPower makeCopy() { return new SymphoniumPower(owner);
     }
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ implementation

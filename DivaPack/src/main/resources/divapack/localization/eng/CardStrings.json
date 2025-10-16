@@ -11,8 +11,8 @@
   },
   "DivaPack:Reprise": {
     "NAME": "Reprise",
-    "DESCRIPTION": "Set ALL Allies' dumbjokedivamod:Rhythm to 0 next turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Set ALL Allies' dumbjokedivamod:Rhythm to 0 next turn."
+    "DESCRIPTION": "Set ALL Allies' dumbjokedivamod:Rhythm to 1 next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Set ALL Allies' dumbjokedivamod:Rhythm to 1 next turn."
   },
   "DivaPack:Counterpoint": {
     "NAME": "Counterpoint",
@@ -43,7 +43,7 @@
   },
   "DivaPack:Leek": {
     "NAME": "Leek",
-    "DESCRIPTION": "Heal ALL Allies by !M! each time you gain dumbjokedivamod:Rhythm this turn."
+    "DESCRIPTION": "Heal ALL Allies by !M! each time you gain dumbjokedivamod:Rhythm this turn. NL Exhausts."
   },
   "DivaPack:CrowdCheer": {
     "NAME": "Crowd Cheer",
@@ -56,8 +56,8 @@
   },
   "DivaPack:Demonstrate": {
     "NAME": "Demonstrate",
-    "DESCRIPTION": "Deal !D! damage. If Fatal, add an *Imitate to a random Ally's deck.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. If Fatal, add an *Imitate to !M! random Allies' decks."
+    "DESCRIPTION": "Deal !D! damage. If Fatal, add an *Imitate to a random Ally's deck. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If Fatal, add an *Imitate to !M! random Allies' decks. NL Exhaust."
   },
   "DivaPack:Imitate": {
     "NAME": "Imitate",

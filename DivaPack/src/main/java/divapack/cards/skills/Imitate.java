@@ -1,17 +1,11 @@
 package divapack.cards.skills;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.unique.AddCardToDeckAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import divapack.actions.ImitateAction;
 import divapack.cards.BaseCard;
-import dumbjokedivamod.cards.starting.Defend;
-
-import java.util.ArrayList;
-
-import static com.badlogic.gdx.math.MathUtils.random;
 
 public class Imitate extends BaseCard {
     public static final String ID = ("DivaPack:" + Imitate.class.getSimpleName());
@@ -34,30 +28,7 @@ public class Imitate extends BaseCard {
     }
 
     @Override public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new AbstractGameAction() {
-            @Override public void update() {
-                ArrayList<AbstractCard> cards = new ArrayList<>(p.masterDeck.group);
-                for (int i = 0; i < cards.size(); i++) {
-                    if (cards.get(i).uuid == uuid) {
-                        p.masterDeck.removeCard(cards.get(i));
-                    }
-                    if (cards.get(i).block == -1) {
-                        cards.remove(i);
-                        i -= 1;
-                    }
-                }
-
-                if (cards.isEmpty()) {
-                    AbstractCard pity = new Defend();
-                    pity.block += magicNumber;
-                    addToTop(new AddCardToDeckAction(pity));
-                } else {
-                    cards.get(random.nextInt(cards.size())).block += magicNumber;
-                }
-
-                isDone = true;
-            }
-        });
+        addToBot(new ImitateAction(magicNumber, uuid));
     }
 
     @Override public void triggerWhenDrawn() {

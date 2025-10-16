@@ -1,6 +1,5 @@
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\actions\MoraliseAction.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\actions\RunSchoolAction.java
-C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\AllyArtifactLostSubscriber.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\attacks\Moralise.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\attacks\MouthEssence.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\attacks\SympathyStrike.java
@@ -13,11 +12,12 @@ C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hege
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\skills\ParentsRunaSchool.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\skills\Plague.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\skills\Sandwiches.java
+C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\skills\SilverLiquor.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\skills\SpiritCoins.java
-C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\skills\UmbralArmament.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\skills\UtterContempt.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\cards\skills\WayoftheReaper.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\HegemonPack.java
+C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\MessageReceiver.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\potions\BasePotion.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\powers\AvengerPower.java
 C:\Users\brine\Documents\GitHub\TogetherInRubiMod\HegemonPack\src\main\java\hegemonpack\powers\BasePower.java

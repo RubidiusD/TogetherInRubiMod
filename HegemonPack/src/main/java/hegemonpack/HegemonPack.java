@@ -30,6 +30,7 @@ import com.megacrit.cardcrawl.localization.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
+import spireTogether.SpireTogetherMod;
 
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -58,6 +59,7 @@ public class HegemonPack implements
     public HegemonPack() {
         BaseMod.subscribe(this); //This will make BaseMod trigger all the subscribers at their appropriate times.
         logger.info(modID + " subscribed to BaseMod.");
+        SpireTogetherMod.subscribe(new MessageReceiver());
     }
 
     @Override public void receivePostInitialize() {
