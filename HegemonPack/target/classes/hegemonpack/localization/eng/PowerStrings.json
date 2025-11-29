@@ -16,5 +16,18 @@
     "DESCRIPTIONS": [
       "Whenever an ally consumes Artifact, create ", " Punish in hand.", " Punishes in hand,"
     ]
+  },
+
+  "HegemonPack:JudgementPower": {
+    "NAME": "Judgement",
+    "DESCRIPTIONS": [
+      "Spend all #yJudgement to increase the power of the next played card."
+    ]
+  },
+  "HegemonPack:VirtuePower": {
+    "NAME": "Virtue",
+    "DESCRIPTIONS": [
+      "Increase Block received from Allies by #b", ". At the end of your turn, half bolsters your highest other power."
+    ]
   }
 }

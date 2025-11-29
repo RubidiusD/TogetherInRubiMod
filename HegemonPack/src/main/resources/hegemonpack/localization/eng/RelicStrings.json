@@ -6,18 +6,25 @@
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
   },
-  "HegemonMod:PhasedMysteriousStranger": {
+  "HegemonPack:PhasedMysteriousStranger": {
     "NAME": "Phased Mysterious Stranger",
     "FLAVOR": "That isn't meant to be in this world. Whoever put it here likes you. Hopefully.",
     "DESCRIPTIONS": [
       "[#0000ff]Global. Replaces #rMysterious #rStranger. On gaining a debuff, gain 1 Artifact."
     ]
   },
-  "HegemonMod:PaperUmbrella": {
+  "HegemonPack:PaperUmbrella": {
     "NAME": "Paper Umbrella",
     "FLAVOR": "This is wildly out of place. A good find, nevertheless.",
     "DESCRIPTIONS": [
       "[#0000ff]Global. Sin increases Necrotic damage by #b10% instead of #b7%."
+    ]
+  },
+  "HegemonPack:StarterRelic": {
+    "NAME": "Starter Relic",
+    "FLAVOR": "Such a temporary name.",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if you have more energy than you need to play your hand, enter *Eclipse."
     ]
   }
 }

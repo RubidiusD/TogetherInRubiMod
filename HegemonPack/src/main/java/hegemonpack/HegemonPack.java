@@ -10,6 +10,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireSideload;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import hegemonpack.cards.BaseCard;
+import hegemonpack.characters.Arbiter;
 import hegemonpack.relics.BaseRelic;
 import hegemonpack.util.GeneralUtils;
 import hegemonpack.util.KeywordInfo;
@@ -35,6 +36,8 @@ import spireTogether.SpireTogetherMod;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
+import static com.megacrit.cardcrawl.relics.AbstractRelic.RelicTier.STARTER;
+
 @SpireInitializer
 @SpireSideload(modIDs = {"PatchEverything"})
 public class HegemonPack implements
@@ -42,6 +45,7 @@ public class HegemonPack implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
+        EditCharactersSubscriber,
         PostInitializeSubscriber {
     public static ModInfo info;
     public static String modID; //Edit your pom.xml to change this
@@ -53,6 +57,7 @@ public class HegemonPack implements
     public static void initialize() {
         if (Loader.isModLoaded("HegemonMod")) {
             new HegemonPack();
+            Arbiter.Meta.registerColor();
         }
     }
 
@@ -111,6 +116,10 @@ public class HegemonPack implements
                 localizationPath(lang, "RelicStrings.json"));
         BaseMod.loadCustomStringsFile(UIStrings.class,
                 localizationPath(lang, "UIStrings.json"));
+        BaseMod.loadCustomStringsFile(StanceStrings.class,
+                localizationPath(lang, "StanceStrings.json"));
+        BaseMod.loadCustomStringsFile(CharacterStrings.class,
+                localizationPath(lang, "CharacterStrings.json"));
     }
 
     @Override public void receiveEditKeywords()
@@ -153,15 +162,10 @@ public class HegemonPack implements
         return resourcesFolder + "/localization/" + lang + "/" + file;
     }
 
-    public static String imagePath(String file) {
-        return resourcesFolder + "/images/" + file;
-    }
-    public static String powerPath(String file) {
-        return resourcesFolder + "/images/powers/" + file;
-    }
-    public static String relicPath(String file) {
-        return resourcesFolder + "/images/relics/" + file;
-    }
+    public static String imagePath(String file) { return resourcesFolder + "/images/" + file; }
+    public static String powerPath(String file) { return resourcesFolder + "/images/powers/" + file; }
+    public static String relicPath(String file) { return resourcesFolder + "/images/relics/" + file; }
+    public static String characterPath(String file) { return resourcesFolder + "/images/character/" + file; }
 
     /**
      * Checks the expected resources path based on the package name.
@@ -232,11 +236,16 @@ public class HegemonPack implements
                         BaseMod.addRelic(relic, relic.relicType); //Register a shared or base game character specific relic
 
                     // If the class is annotated with @AutoAdd.Seen, it's marked as seen
-                    if (info.seen)
+                    if (info.seen || relic.tier == STARTER)
                         UnlockTracker.markRelicAsSeen(relic.relicId);
                 });
         // unload globalised relics
         BaseMod.removeRelicFromCustomPool(BaseMod.getCustomRelic(ReaperToken.ID), Hegemon.Meta.CARD_COLOR);
         BaseMod.removeRelicFromCustomPool(BaseMod.getCustomRelic(PaperUmbrella.ID), Hegemon.Meta.CARD_COLOR);
+    }
+
+    @Override
+    public void receiveEditCharacters() {
+        Arbiter.Meta.registerCharacter();
     }
 }

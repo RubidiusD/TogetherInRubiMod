@@ -85,5 +85,126 @@
     "NAME": "Utter Contempt",
     "DESCRIPTION": "Apply !M! HegemonMod:Sin. NL This enemy's HegemonMod:Sin applies to their Poison.",
     "UPGRADE_DESCRIPTION": "Innate. NL Apply !M! HegemonMod:Sin. NL This enemy's HegemonMod:Sin applies to their Poison."
+  },
+
+
+
+
+
+  "HegemonPack:Condemn": {
+    "NAME": "Condemn",
+    "DESCRIPTION": "Apply !D! HegemonMod:Necrotoxin to ALL Enemies. NL Enter *Sin."
+  },
+  "HegemonPack:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+
+  "HegemonPack:Glare": {
+    "NAME": "Glare",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !D! HegemonMod:Sin."
+  },
+  "HegemonPack:Spacer": {
+    "NAME": "Spacer",
+    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage. If they intend to attack, add !M! *Soothes to the draw pile."
+  },
+  "HegemonPack:SpeedChant": {
+    "NAME": "Speed Chant",
+    "DESCRIPTION": "Deal !D! HegemonMod:Necrotic damage. Keep your Block next turn."
+  },
+
+  "HegemonPack:Rebound": {
+    "NAME": "Rebound",
+    "DESCRIPTION": "Deal !D! damage. Give a random Ally !B! Block."
+  },
+  "HegemonPack:Wither": {
+    "NAME": "Wither",
+    "DESCRIPTION": "Ethereal. NL Deal !D! HegemonMod:Necrotic damage."
+  },
+
+  "HegemonPack:Overrule": {
+    "NAME": "Overrule",
+    "DESCRIPTION": "Innate. Deal !D! damage and remove ALL Artifact. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Innate. Deal !D! damage to- and remove ALL Artifact from ALL enemies. NL Exhaust."
+  },
+  "HegemonPack:TalkToTheBook": {
+    "NAME": "Talk to the Book",
+    "DESCRIPTION": "Deal !D! damage. Whenever you (pl.) attack this enemy, gain !M! Block. NL Exhaust."
+  },
+
+  "HegemonPack:Seethe": {
+    "NAME": "Seethe",
+    "DESCRIPTION": "Apply !M! HegemonMod:Sin and !D! HegemonMod:Necrotoxin to an Enemy. NL Exhaust."
+  },
+
+
+  "HegemonPack:Condone": {
+    "NAME": "Condone",
+    "DESCRIPTION": "Apply !B! Block to an Ally. NL Enter *Virtue."
+  },
+  "HegemonPack:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+
+  "HegemonPack:Cower": {
+    "NAME": "Cower",
+    "DESCRIPTION": "Apply !B! Block to an Ally. Gain !M! Judgement."
+  },
+
+  "HegemonPack:Enrich": {
+    "NAME": "Enrich",
+    "DESCRIPTION": "Target Ally's created cards are upgraded for !M! turns."
+  },
+  "HegemonPack:Shroud": {
+    "NAME": "Shroud",
+    "DESCRIPTION": "Retain. NL Give !B! Block to a random Ally !M! times."
+  },
+  "HegemonPack:Suppress": {
+    "NAME": "Suppress",
+    "DESCRIPTION": "Shuffle a *Seethe into your draw pile."
+  },
+
+  "HegemonPack:Areti": {
+    "NAME": "Areti",
+    "DESCRIPTION": "Apply !M! Virtue to the target Ally."
+  },
+
+  "HegemonPack:Soothe": {
+    "NAME": "Soothe",
+    "DESCRIPTION": "Apply !M! HegemonPack:Virtue and !B! Block to an Ally. NL Exhaust."
+  },
+
+
+  "HegemonPack:PolishNails": {
+    "NAME": "Polish Nails",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "HegemonPack:Reward": {
+    "NAME": "Reward",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "HegemonPack:SharpTeeth": {
+    "NAME": "Sharpen Teeth",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+
+  "HegemonPack:EclipseForm": {
+    "NAME": "Eclipse Form",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+
+
+  "HegemonPack:ChooseVirtue": {
+    "NAME": "Virtue",
+    "DESCRIPTION": "Gain Dexterity over time. Apply Block equal to your Dexterity to ALL Allies on leaving."
+  },
+  "HegemonPack:ChooseSin": {
+    "NAME": "Sin",
+    "DESCRIPTION": "Gain Strength over time."
+  },
+  "HegemonPack:ChooseEclipse": {
+    "NAME": "Eclipse",
+    "DESCRIPTION": "Draw each time you play a skill. Convert all Dexterity to Judgement on entering."
   }
 }

@@ -1,0 +1,20 @@
+{
+  "HegemonPack:VirtueStance": {
+    "NAME": "Virtue",
+    "DESCRIPTION": [
+      "Gain #b1 Dexterity each turn. Leaving #yVirtue applies #b", " Block to ALL Allies."
+    ]
+  },
+  "HegemonPack:SinStance": {
+    "NAME": "Sin",
+    "DESCRIPTION": [
+      "Gain #b1 #yJudgement each turn."
+    ]
+  },
+  "HegemonPack:EclipseStance": {
+    "NAME": "Eclipse",
+    "DESCRIPTION": [
+      "Draw a card each time you play a Skill. Entering #yEclipse converts all Dexterity to #yPotential."
+    ]
+  }
+}
